@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCasas - Construção de Casas Sustentáveis</title>
+   <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoCasas</span>
+            </a>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#materiais">Materiais</a>
+                <a href="#tecnicas">Técnicas</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Carousel -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Construção de Casas Sustentáveis</h1>
+                    <p class="hero-description">
+                        Descubra projetos reais de casas sustentáveis construídas com materiais ecológicos, técnicas inovadoras
+                        e design consciente. Inspire-se para seu próximo projeto!
+                    </p>
+                </div>
+
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <div class="carousel-card">
+                        <div class="carousel-content">
+                            <!-- Image Section -->
+                            <div class="carousel-image">
+                                <img id="carousel-img" src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&h=400&fit=crop" alt="Casa Sustentável">
+                                <div class="location-badge" id="location-badge">São Paulo, SP</div>
+                            </div>
+
+                            <!-- Content Section -->
+                            <div class="carousel-info">
+                                <div class="carousel-header">
+                                    <h3 id="carousel-title">Casa de Bambu Moderna</h3>
+                                    <p id="carousel-description">Uma residência inovadora construída inteiramente com bambu certificado, oferecendo design contemporâneo e máxima sustentabilidade.</p>
+                                </div>
+
+                                <div class="carousel-details">
+                                    <!-- Features -->
+                                    <div class="features-section">
+                                        <h4>Características Sustentáveis:</h4>
+                                        <div class="features-list" id="features-list">
+                                            <span class="feature-badge">Bambu Certificado</span>
+                                            <span class="feature-badge">Energia Solar</span>
+                                            <span class="feature-badge">Captação de Chuva</span>
+                                            <span class="feature-badge">Ventilação Natural</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sustainability Metrics -->
+                                    <div class="metrics-section">
+                                        <h4>Indicadores de Sustentabilidade:</h4>
+                                        
+                                        <div class="metric">
+                                            <div class="metric-header">
+                                                <i class="fas fa-sun"></i>
+                                                <span>Eficiência Energética</span>
+                                                <span class="metric-value" id="energy-value">85%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill energy" id="energy-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="metric">
+                                            <div class="metric-header">
+                                                <i class="fas fa-tint"></i>
+                                                <span>Economia de Água</span>
+                                                <span class="metric-value" id="water-value">60%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill water" id="water-progress" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="metric">
+                                            <div class="metric-header">
+                                                <i class="fas fa-leaf"></i>
+                                                <span>Redução CO₂</span>
+                                                <span class="metric-value" id="co2-value">70%</span>
+                                            </div>
+                                            <div class="progress-bar">
+                                                <div class="progress-fill co2" id="co2-progress" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-arrow carousel-prev" id="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-arrow carousel-next" id="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Dots Indicator -->
+                    <div class="carousel-dots" id="carousel-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                        <button class="dot" data-slide="3"></button>
+                        <button class="dot" data-slide="4"></button>
+                    </div>
+
+                    <!-- Carousel Info -->
+                    <div class="carousel-counter">
+                        <span id="current-slide">1</span> de <span id="total-slides">5</span> casas sustentáveis
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary">
+                        Começar Meu Projeto
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline">Solicitar Orçamento</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="sobre" class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que Construir Sustentável?</h2>
+                    <p>A construção sustentável oferece benefícios ambientais, econômicos e sociais que transformam a forma como vivemos e interagimos com nosso ambiente.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Impacto Ambiental</h3>
+                        <p>Redução de até 50% nas emissões de CO₂, uso eficiente de recursos naturais e minimização de resíduos durante a construção.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-sun"></i>
+                        <h3>Eficiência Energética</h3>
+                        <p>Economia de até 70% na conta de energia através de isolamento térmico, energia solar e design bioclimático.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-tint"></i>
+                        <h3>Gestão da Água</h3>
+                        <p>Sistemas de captação de água da chuva, reuso de águas cinzas e paisagismo que reduz o consumo hídrico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Section -->
+        <section id="materiais" class="materials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Materiais Sustentáveis</h2>
+                    <p>Conheça os principais materiais ecológicos utilizados na construção sustentável.</p>
+                </div>
+                
+                <div class="materials-content">
+                    <div class="materials-list">
+                        <div class="material-card">
+                            <div class="material-header">
+                                <i class="fas fa-home"></i>
+                                <h3>Bambu</h3>
+                            </div>
+                            <p>Material renovável, resistente e flexível. Cresce rapidamente e absorve mais CO₂ que as árvores.</p>
+                            <div class="material-tags">
+                                <span class="tag">Renovável</span>
+                                <span class="tag">Resistente</span>
+                            </div>
+                        </div>
+                        
+                        <div class="material-card">
+                            <div class="material-header">
+                                <i class="fas fa-recycle"></i>
+                                <h3>Tijolo Ecológico</h3>
+                            </div>
+                            <p>Feito com solo-cimento, não precisa de queima. Oferece melhor isolamento térmico e acústico.</p>
+                            <div class="material-tags">
+                                <span class="tag">Sem Queima</span>
+                                <span class="tag">Isolante</span>
+                            </div>
+                        </div>
+                        
+                        <div class="material-card">
+                            <div class="material-header">
+                                <i class="fas fa-wind"></i>
+                                <h3>Madeira Certificada</h3>
+                            </div>
+                            <p>Madeira de reflorestamento ou manejo sustentável. Sequestra carbono e é totalmente renovável.</p>
+                            <div class="material-tags">
+                                <span class="tag">Certificada</span>
+                                <span class="tag">Carbono Neutro</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="materials-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Materiais sustentáveis">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contato" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto para Construir Sustentável?</h2>
+                    <p>Entre em contato conosco para uma consultoria personalizada e descubra como tornar seu projeto de construção mais sustentável.</p>
+                    <div class="cta-actions">
+                        <button class="btn btn-secondary">Solicitar Consultoria</button>
+                        <button class="btn btn-outline-white">Baixar Guia Gratuito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EcoCasas. Todos os direitos reservados.</p>
+                <nav class="footer-nav">
+                    <a href="#">Termos de Serviço</a>
+                    <a href="#">Privacidade</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scipt.js"></script>
+</body>
+</html>

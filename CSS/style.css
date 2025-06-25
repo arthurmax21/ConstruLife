@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carousel-item{
     width:             900px;
     height:            900px;
@@ -62,3 +63,19 @@
 
 }
 
+=======
+#ID1{
+    width: 100px;
+    height: 100px;
+}
+
+#ID2{
+    width: 100px;
+    height: 100px;
+}
+
+#ID3{
+    width:  1000px;
+    height: 1000px;
+}
+>>>>>>> 21445e46b4c66537618721078b83bae269de749c
