@@ -1,0 +1,223 @@
+*{margin: 0%;}
+
+body{
+    background-color: #5E5E5E;
+    color: #FFF6ED;
+}
+
+.divSobreNos{
+    background-color: #15297C;
+    margin-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 150px;
+  }
+  
+.sobreNos1{
+    float: right;
+  }
+  
+  .sobreNos2{
+    float: left;
+  }
+  
+  .tituloP{
+    color: #FFF6ED;
+  }
+  
+  #tituloHistoria{
+    color: #FFF6ED;
+  }
+  
+  .MV1{
+    background-color: #15297C;
+    color: #FFF6ED;
+    padding: 5%;
+    padding: 5%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 200px;
+    width: 250px;
+   
+  }
+  
+  .MV2{
+    background-color: #15297C;
+    color: #FFF6ED;
+    padding: 5%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 200px;
+    width: 250px;
+  }
+  
+  #visão{
+    background-color: #FFF6ED;
+    color: #15297C;
+    padding: 5%;
+    padding: 5%;
+    margin: 30px;
+   height: 200px;
+    width: 250px;
+  }
+  
+  #servicoOferece{
+    background-color: #FFF6ED;
+    color: #000000;
+    margin: 30px;
+    padding: 5%;
+  }
+  
+  #sO{
+    color: #15297C;
+    margin: 30px;
+    padding: 5%;
+  } 
+
+  .textoS{
+    float: left;
+  }
+  
+  #E{
+    color: #15297C;
+  }
+  
+  #S{
+    color: #FFF6ED;
+  }
+  
+  #G{
+    color: #000000;
+  }
+  
+  .imgESG{
+    float: left;
+  }
+
+  .caixaDeTextoESG1{
+    background-color: #FFF6ED;
+    margin: 30px;
+    padding: 5% 5% 5% 5%;
+    height: 240px;
+    width: 1000px;
+  }
+  
+  .caixaDeTextoESG2{
+    background-color: #FFF6ED;
+    margin: 30px;
+    padding: 5%;
+    height: 240px;
+    width: 1000px;
+  }
+
+  .caixaDeTextoESG3{
+    background-color: #FFF6ED;
+    margin: 30px;
+    padding: 5%;
+    height: 240px;
+    width: 1000px;
+  }
+  
+  .tituloESG{
+    color: #15297C;
+  }
+  
+  .subtituloESG{
+
+    color: #15297C;
+  }
+  
+  .textoESG{
+    color: #000000;
+  }
+  
+  #f{
+   background-color: #15297C;
+   color: #FFF6ED;
+  }
+  
+  #VP{
+   color: #15297C;
+  }
+  
+  .caixaVP{
+   background-color: #15297C;
+   color: #FFF6ED;
+   margin: 20px;
+  }
+
+  .imgCaFG1{
+   background-color: #5E5E5E;
+   margin: 20px;
+  }
+  
+  .imgCaFG2{
+   background-color: #5E5E5E;
+   color: #FFF6ED;
+   margin: 20px;
+  }
+  
+  #SuaCasa{
+   background-color: #FFF6ED;
+  }
+  
+  #icones1{
+   background-color: #5E5E5E;
+   color: #15297C;
+   margin: 10px;
+  }
+  
+  #icones2{
+   background-color: #5E5E5E;
+   color: #15297C;
+   margin: 10px;
+  }
+  
+  #icones3{
+   background-color: #5E5E5E;
+   color: #15297C;
+   margin: 10px;
+  }
+  
+  #icones4{
+   background-color: #5E5E5E;
+   color: #15297C;
+  }
+  
+  #icones5{
+   background-color: #5E5E5E;
+   color: #15297C;
+   margin: 10px;
+  }
+  
+  #VP2{
+   color: #15297C;
+   grid-column: 1/3;
+   grid-row: 1/2;
+  }
+  
+  #botao{
+   background-color: #15297C;
+   color: #FFF6ED;
+  }
+  
+  .PF{
+   border-top: 5px solid 15297C;
+   background-color: #FFF6ED;
+   color: #000000;
+  }
+  
+  #VP3{
+   color: #15297C;
+  }
+  
+#caixa{
+    height: 60px;
+}
+#FG{
+    height: 60px;
+}
+
+  
