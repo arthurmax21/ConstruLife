@@ -1,0 +1,81 @@
+<<<<<<< HEAD
+=======
+.carousel-item{
+    width:             900px;
+    height:            900px;
+}
+
+.textoHome{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.img2{
+    grid-column: 3;
+    
+}
+
+.texto2{
+    grid-column: 2 / 4;
+    grid-row: 2/4;
+    
+}
+
+#principalFooter{
+    border: 2px solid black;
+}
+
+.section{
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+#footer{
+    background-color: #000; color: #fff; padding: 20px 0;
+}
+
+.div1{
+    background-color: #15297C; 
+    color: #fff6ed; 
+    padding: 60px 30px;
+
+}
+.div2{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    max-width: 1200px; 
+    margin: auto;
+
+}
+.div3{
+    flex: 1; min-width: 200px; margin: 10px;
+
+}
+
+.div4{
+    
+
+}
+
+#ID1{
+    width: 100px;
+    height: 100px;
+}
+
+#ID2{
+    width: 100px;
+    height: 100px;
+}
+
+#ID3{
+    width:  1000px;
+    height: 1000px;
+}
+>>>>>>> e54827137b1cd73c6eee17cb0d81e8c263dbb131
