@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cores e estilos gerais */
+body {
+    background-color: #15297C;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1#f {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+#PF {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(255, 252, 252, 0.9);
+    /* text-align: center; */
+}
+
+#textoPF {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+#conteinervantagens {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#VP {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #15297C;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    
+
+}
+
+#caixaVp1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.caixaVP {
+    background-color: #ecf0f1;
+    padding: 15px 20px;
+    border-radius: 8px;
+    flex: 1 1 250px;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logos */
+.imgCaFG1,
+.imgCaFG2 {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+#caixa,
+#FG {
+    max-height: 60px;
+    width: auto;
+}
+
+/* Bloco "SuaCasa" */
+#SuaCasa {
+    background-color: #dff9fb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#SuaCasa>b {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* Ícones e info */
+#icones1,
+#icones2,
+#icones3,
+#icones4,
+#icones5 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+#icones1 img,
+#icones2 img,
+#icones3 img,
+#icones4 img,
+#icones5 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+#BotaoiSimulacao {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#VP2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#botao {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botao:hover {
+    background-color: #219150;
+}
+
+/* Seção "Fale conosco" */
+#VP3 {
+    margin-top: 40px;
+    font-size: 1.6em;
+    color: #2c3e50;
+}
+
+#PF p {
+    margin: 15px 0;
+}
+
+#PF img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #caixaVp1 {
+        flex-direction: column;
+    }
+
+    .caixaVP {
+        width: 100%;
+    }
+
+    #icones1,
+    #icones2,
+    #icones3,
+    #icones4,
+    #icones5 {
+        flex-direction: row;
+    }
+}

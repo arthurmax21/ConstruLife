@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:Teste/index.html
     <titlegit>ConstruLife | Sobre nós</title>
     <link rel="stylesheet" href="./CSS/style.css">
+=======
+    <title>ConstruLife | Sobre nós</title>
+    <link rel="stylesheet" href="./style.css">
+>>>>>>> dc44d961328b74c9d422886f9364f458084b2b83:Teste/novoaa/index.html
 </head>
 <body>
+
+    <header class="header">
+        <div class="logo">🏠 ConstruLife</div>
+        <input type="text" placeholder="Pesquisar..." class="search-bar">
+        <nav class="menu" onclick="toggleMenu()">MENU ☰</nav>
+        <ul id="menu-items" class="menu-items">
+          <li><a href="#intro">Início</a></li>
+          <li><a href="#obras">Obras</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#sustentabilidade">ESG</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </header>
     
     <div class="container">
         <h1 class = 'tituloP'> Sobre a nossa empresa </h1>
@@ -28,16 +46,21 @@
             </p>
         
         </div>
+
         <div class= 'divSobreNos'>
-            <img src = "" alt="casa com um jardim e algumas arvores">
-            <p class= 'sobreNos2'> 
+
+            <div id="xd">
+                <img id="imgSobreNos" src = "./IMG/emFaseConstrucaoPrimeiro.jpg" alt="casa com um jardim e algumas arvores">
+                <p class= 'sobreNos2'> 
                 Com sede em Braz Leme – Casa Verde, a construlife rapidamente se consolidou como referência nacional 
                 no desenvolvimento de habitações sustentáveis e inteligentes, atendendo tanto projetos residenciais quanto 
                 iniciativas sociais e comunitárias.
                 Desde sua criação, a ConstruLife atua de forma integrada aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.
                 Seu diferencial é a forte atuação social, não apenas por construir moradias sustentáveis, mas por promover inclusão,
                 empregar mão de obra local, e realizar projetos com foco em comunidades em situação de vulnerabilidade.
-            </p>
+                </p>
+            </div>
+
         </div>
         
         <div id= "MVVSO">
@@ -215,6 +238,20 @@
             
         </div>
     </div>
+
+    <footer>
+        <div class="footer">
+          <p>© 2025 ConstruLife • Todos os direitos reservados</p>
+          <div class="info-footer">
+            <p>Sobre nós</p>
+            <p>Redes sociais</p>
+            <p>Localização</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="./JS/main.js"></script>
+
 </body>
         
 </html>
