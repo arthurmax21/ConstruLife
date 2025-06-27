@@ -1,32 +1,96 @@
-*{margin: 0%;}
+*{
+  margin: 0%;
+}
 
 body{
     background-color: #5E5E5E;
     color: #FFF6ED;
 }
 
-.divSobreNos{
-    background-color: #15297C;
-    margin-bottom: 30px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: 150px;
+.conteiner{
+  display: grid;
+  grid-template-columns: 2fr, 2fr, 2fr;
+  grid-template-rows: repeat(3, 3fr);
+  
+}
+
+.header{
+  background-color: #1b2a5e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.footer {
+  background: #1b2a5e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.divSobreNos {
+  display: grid;
+  margin-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 150px;
+  background-color: #15297C;
+  margin-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 150px;
+
   }
   
 .sobreNos1{
-    float: right;
+    width: 30%;
+    height: 30%;
+    grid-column: 1;
+    grid-row: 2;
+
   }
   
   .sobreNos2{
+    display: flex;
+    width: 30%;
+    height: 30%;
     float: left;
   }
   
   .tituloP{
+    text-align: center;
     color: #FFF6ED;
+    font-size: 5em;
+    margin-bottom: 5%;
+    justify-content: center;
   }
   
   #tituloHistoria{
     color: #FFF6ED;
+    grid-area: 1;
+    grid-row: 1;
+    
+
+  }
+
+  .imgSobreNos{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+
+  }
+
+  .xd{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-areas: "area1" "area2";
+
   }
   
   .MV1{
