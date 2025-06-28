@@ -106,8 +106,8 @@
       <div class= 'imgCaFG'>
         <img src="./IMG/logo_fgts.png" alt="Logo FGTS" id= "FG">
       </div>
-        <div id= "conteinerSuaCasa">
-            <b>Sua casa própria está na contrulife</b>
+      <div id= "conteinerSuaCasa">
+            <b id="SuaCa">Sua casa própria está na contrulife</b>
             <div class="icon" id= icones1>
                 <img src="./IMG/predio_azul.png" alt="Logo FGTS" >
                 <p>
@@ -151,7 +151,84 @@
     <div id= 'conteinerBotaoiSimulacao'>
         <p id= 'VP2'> Agora que você já sabe um pouco mais sobre as vantagens, vamos simular seu financiamento
         </p>
-        <input type="button" value="Quero simular agora" id= 'botao'>
+        <button class="btnOpenModal" onclick="openModal()">Quero simular agora</button>
+
+        <div class="modal-container">
+          <div class="modal">
+            <h2>Simulador de Financiamento</h2>
+            <div class="botãodesimulação">
+              <hr/>
+              <span>
+                Qual a região que você gostaria de morar? 
+              </span>
+              
+              <div class="btns">
+                <button class="btnOK" onclick="nextStep()">Zona Norte</button>
+                <button class="btnOK" onclick="nextStep()">Zona Sul</button>
+                <button class="btnOK" onclick="nextStep()">Centro</button>
+                <button class="btnOK" onclick="nextStep()">Zona Leste</button>
+                <button class="btnOK" onclick="nextStep()">Zona Oeste</button>
+                <button class="btnClose" onclick="closeModal()">Close</button>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="modal">
+            <h2>Simulador de Financiamento</h2>
+            <div class="botãodesimulação">
+              <hr/>
+              <span>
+                Qual a quantidade de dormitórios que você procura?
+              </span>
+              
+              <div class="btns">
+                <button class="btnOK" onclick="nextStep()">1 dorm.</button>
+                <button class="btnOK" onclick="nextStep()">2 dorm.</button>
+                <button class="btnOK" onclick="nextStep()">3 dorm.</button>
+                <button class="btnOK" onclick="nextStep()">4 dorm. ou +</button>
+                <button class="btnClose" onclick="closeModal()">Close</button>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="modal">
+            <h2>Simulador de Financiamento</h2>
+            <div class="botãodesimulação">
+              <hr/>
+              <span>
+                Qual valor total dessa soma? <p>Se for apenas você, indique o seu salário.</p>
+              </span>
+              <div class="btns">
+                <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>$ 0,00</p>
+                <!-- <button class="btnOK" onclick="closeModal()">eu e + uma pessoa</button>
+                <button class="btnOK" onclick="closeModal()">eu e + duas pessoas</button> -->
+                <!-- <button class="btnOK" onclick="closeModal()">Zona Leste</button>
+                <button class="btnOK" onclick="closeModal()">Zona Oeste</button> -->
+                <button class="btnClose" onclick="closeModal()">Close</button>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="modal">
+            <h2>Simulador de Financiamento</h2>
+            <div class="botãodesimulação">
+              <hr/>
+              <span>
+                Você possuí FGTS? Se sim, indique o valor.
+              </span>
+              
+              <div class="btns">
+                <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>R$ 0,00</p>
+                <!-- <button class="btnOK" onclick="closeModal()">Zona Sul</button>
+                <button class="btnOK" onclick="closeModal()">Centro</button>
+                <button class="btnOK" onclick="closeModal()">Zona Leste</button>
+                <button class="btnOK" onclick="closeModal()">Zona Oeste</button>-->
+                <button class="btnClose" onclick="closeModal()">Close</button> 
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
     </div>
       
   </div>
