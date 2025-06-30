@@ -1181,4 +1181,51 @@ span {
     font-size: 1.1rem;
     padding: 12px;
   }
+
+  /* #banner{ 
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  height: 100%;
+  position: relative;
+   */
+}
+
+#card1{
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  color: #FFF6ED;
+}
+
+#p1{
+  grid-column: 1 / 1;
+  grid-template-rows: 1 / 5;
+}
+
+#BANNER{
+  position: relative;
+  text-align: center;
+  /* height: 300px;
+  width: 200px; */
+}
+
+.BANNER.img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.BANNER.h3{
+  position: absolute; /* Posiciona o texto absolutamente */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+  color: white; /* Cor do texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+  padding: 10px; /* Espaçamento ao redor do texto */
 }
