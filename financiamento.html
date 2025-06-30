@@ -33,8 +33,8 @@
     <!-- <input type="text" placeholder="Pesquisar..." class="search-bar"> -->
     <nav class="menu" onclick="toggleMenu()">MENU ☰</nav>
     <ul id="menu-items" class="menu-items">
-      <li><a href="./home.html.html">Início</a></li>
-      <li><a href="./index.html">Sobre nós</a></li>
+      <li><a href="./home.html.html">Home</a></li>
+      <li><a href="./sobreNos.html">Sobre nós</a></li>
       <li><a href="./financiamento.html">Financiamento</a></li>
       <!-- <li><a href="#tituloP">Sustentabilidade</a></li>
       <li><a href="#contato">Contato</a></li> -->
@@ -218,12 +218,34 @@
               </span>
               
               <div class="btns">
-                <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>R$ 0,00</p>
-                <!-- <button class="btnOK" onclick="closeModal()">Zona Sul</button>
-                <button class="btnOK" onclick="closeModal()">Centro</button>
+                <button class="btnOK" onclick="nextStep()">Simular financiamento</button>
+                <!-- <button class="btnOK" onclick="closeModal()">Centro</button>
                 <button class="btnOK" onclick="closeModal()">Zona Leste</button>
                 <button class="btnOK" onclick="closeModal()">Zona Oeste</button>-->
                 <button class="btnClose" onclick="closeModal()">Close</button> 
+              </div>
+              <hr />
+          </div>
+        </div>  
+          <div class="modal">
+            <h2>Simulador de Financiamento</h2>
+            <div class="botãodesimulação">
+              <hr/>
+              <span>
+                Parabéns! Foi calculado o seu potencial de financiamento com base nos dados que você nós informou.
+              </span>
+              
+              <div class="btns">
+                <div class="btns">
+                  <div>Com uma renda de <p>R$ 0,00</p></div>
+                  <div>E seu FGTS de<p>R$ 0,00</p></div>
+                  <div>E seu FGTS de<p>R$ 0,00</p></div>
+                  <div>é possível financiar até <p>R$ 0.00</p></div>
+                   <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto."><button class="btnOK" onclick="nextStep()" href>Quero financiar</button></a>
+                  <button class="btnClose" onclick="closeModal()">Close</button> 
+                </div>
+                <hr />
+              </div>
               </div>
               <hr />
             </div>
@@ -242,8 +264,8 @@
           que um de nossos atendentes entre em contato com você o mais breve possível.
           Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato através
       </p>
-      <img src="./IMG/e-mail.png" alt="icone de e-mail" class="imgET">
-      <img src="./IMG/telefone.png" alt="icone de telefone" class="imgET">
+      <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto." class="imgET"> <img src="./IMG/telefone.png" alt="icone de telefone"></a>
+      
   </div>
 
   <footer>
