@@ -30,9 +30,10 @@ body{
   }
 
 
-header.header {
+.header {
   background-color: #15297C;
   display: flex;
+  justify-content: flex-start;  
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -42,8 +43,31 @@ header.header {
 }
 
 .logo {
-  font-size: 1.5 rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  height: 300px;
+  justify-content: flex-start;
+  font-size: 1rem;
   font-weight: bold;
+  align-items: center;
+}
+
+#logoEmpresa{
+  grid-column: 1 / 1 ;
+  grid-row: 1 / 1 ;
+  width: 9rem;
+  height: 9rem;
+}
+
+#textLogo{
+  grid-column: 2 ;
+  grid-row: 1;
+  justify-content: flex-end;
+}
+
+#menu{
+  font-size: 1.5rem;
 }
 
 /* .search-bar {
@@ -84,8 +108,19 @@ header.header {
   background: #15297C;
   padding: 40px 20px;
   text-align: center;
-}
 
+  }
+#h1Welcome{
+  font-size: 5rem;
+
+}
+#p1{
+  font-size: 2rem;
+}
+#img1{
+  width: 50%;
+  height: 30%;
+}
 .intro img, #impactoSocial img {
   max-width: 100%;
   height: auto;
