@@ -9,6 +9,14 @@ Reset e base
   font-weight: 700px;
   font-style: normal;
 }
+.conteiner1{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: start;
+  justify-content: center;
+
+}
 .logoEmpresa{
   width: auto;
   height: auto;
@@ -31,7 +39,7 @@ body{
 
 
 header.header {
-  background-color: #15297C;
+  background-color: #e4e7ea;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +52,18 @@ header.header {
 .logo {
   font-size: 1.5 rem;
   font-weight: bold;
+}
+
+.h1{
+  font-size: 3rem;
+}
+
+.imgWelcome{
+  width: 30%;
+  height: 20%;
+}
+.h2About{
+  
 }
 
 /* .search-bar {
