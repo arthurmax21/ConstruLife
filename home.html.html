@@ -32,7 +32,9 @@
 
 </head>
 <body>
+  
 
+  <div id="conteiner1">
   <header class="header">
 
   <div class="logo">
@@ -43,7 +45,9 @@
 
   </div>
     <!-- <input type="text" placeholder="Pesquisar..." class="search-bar"> -->
-    <nav class="menu" onclick="toggleMenu()"> <h3 id="menu">MENU ☰</h3></nav>
+    <nav class="menu" onclick="toggleMenu()"> <h3 id="menu"> ☰ </h3></nav>
+    
+    <nav class="menu" onclick="toggleMenu()">MENU ☰</nav>
     <ul id="menu-items" class="menu-items">
       <li><a href="./home.html.html">Home</a></li>
       <li><a href="./sobreNos.html">Sobre nós</a></li>
@@ -52,67 +56,164 @@
       <li><a href="#contato">Contato</a></li> -->
     </ul>
   </header>
+  
+  </div>
 
   <main>
     <section id="intro" class="intro">
       <div class="intro-text">
-        <h1 id="h1Welcome">Bem-vindo à ConstruLife</h1>
+        <!-- <h1 id="h1Welcome">Bem-vindo à ConstruLife</h1> -->
+      <!-- <div class="intro-text">
+        <h1 id="h1">Bem-vindo à ConstruLife</h1>
         <p id="p1">
           ConstruLife tem o foco em mudar esse conceito, conciliando tecnologia e sustentabilidade, com o toque especial de cuidado com o meio ambiente, transformando assim a vida das pessoas e um pouco do mundo.
         </p>
+      </div> -->
+      <div class="BANNER">
+      <h3>Encontre seu imóvel</h3>
+      <img id="BANNER" src="./IMG/banner.jpg" alt="BANNER ConstruLife">
       </div>
       <img id="img1" src="./IMG/primeiraDoCarrossel.jpg" alt="Projeto sustentável">
+
     </section>
 
 <section id="sobre" class="sobre">
-      <h2>Sobre a Nossa Empresa</h2>
-      <p>
+      <h2 id="h2About">Sobre a Nossa Empresa</h2>
+      <p id="pAbout">
         A ConstruLife surgiu com o propósito de transformar o mercado da construção, unindo inovação tecnológica, sustentabilidade e atendimento humano.
       </p>
 </section>
 
     <section id="obras" class="obras">
-      <h2>Nossas Obras</h2>
+      <!-- <h2>Nossas Obras</h2> -->
+
+        
+      
+        <!-- inicio card1 -->
 
         <h2>Lançamentos:</h2>
+
     <div class="grid">
-      <div class="card blue">
+      <div class="card1">
         <img src="./IMG/lancamentoPrimeira.jpg" alt="Projeto sustentável">
-        <strong>PRÉDIO SUSTENTÁVEL DE PEQUENO PORTE</strong><br />
-        LOCALIZAÇÃO: PITUERA – SÃO PAULO – SP<br />
+        <h3>Modern Pirituba</h3>
+        <h5>Pirituba</h5>
+
+        <!-- <strong>PRÉDIO SUSTENTÁVEL DE PEQUENO PORTE</strong><br />
+        LOCALIZAÇÃO: PIRITUBA – SÃO PAULO – SP<br /> 
         ÁREA CONSTRUÍDA: 138 M²<br />
-        PRAZO DE ENTREGA: 18 MESES<br />
-        <span class="price">PREÇO COBRADO AO CLIENTE: R$ 59.000</span>
+        PRAZO DE ENTREGA: 18 MESES<br /> -->
+
+        <!-- texto card1 -->
+        
+        <span class="price">
+          <!-- PREÇO COBRADO AO CLIENTE: R$ 59.000 -->
+          <div id="textCard1">
+          <p id="p1">2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
+          <p id="p2">Piscinas</p>
+          <p id="p3">Churrasqueira</p>
+          <p id="p4">Espaço Fitness</p>
+          <p id="p5">Espaço Goumert</p>
+         </div>
+        </span>
+
       </div>
-      <div class="card white">
+
+      <!-- fim card 1 -->
+
+      <!-- Card 2 inicio -->
+
+      <h2>Pronto para morar:</h2>
+
+      <div class="card2">
         <img src="./IMG/lancamentoSegunda.jpg" alt="Projeto sustentável">
-        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE</strong><br />
+         <h3>Le Parc Braz Leme</h3>
+         <h5>Casa Verde</h5>
+        <!--<br />
         LOCALIZAÇÃO: LAGOA DA CONCEIÇÃO – FLORIANÓPOLIS – SC<br />
         ÁREA CONSTRUÍDA: 145 M²<br />
-        PRAZO DE ENTREGA: 19 MESES<br />
-        <span class="price">PREÇO COBRADO AO CLIENTE: R$ 59.000</span>
+        PRAZO DE ENTREGA: 19 MESES<br /> -->
+        <span class="price">
+          
+          <!-- PREÇO COBRADO AO CLIENTE: R$ 59.000 -->
+
+          <!-- Texto do card 1 -->
+
+          <div id="textCard2">
+            <p id="p1">2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
+            <p id="p2">Piscinas</p>
+            <p id="p3">Churrasqueira</p>
+            <p id="p4">Espaço Fitness</p>
+            <p id="p5">Espaço Goumert</p>
+           </div>
+
+        </span>
+
+        
       </div>
+
+      <!-- fim card 2 -->
+
+      <!-- inicio card 3 -->
+
+      <h2>Em Construção:</h2>
+
       <div class="card blue">
         <img src="./IMG/lancamentoTerceira.jpg" alt="Projeto sustentável">
-        <strong>CASA SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
-        LOCALIZAÇÃO: ALTO DE PINHEIROS – SÃO PAULO – SP<br />
-        ÁREA CONSTRUÍDA: 160 M²<br />
-        PRAZO DE ENTREGA: 22 MESES<br />
-        <span class="price">R$ 69.000</span>
+
+        <h3>Grand Club Tatuapé </h3>
+       
+        <span class="price">   
+          
+          <!-- R$ 69.000    -->
+
+        <div id="card3">
+
+            <p id="p1">2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
+            <p id="p2">Piscinas</p>
+            <p id="p3">Churrasqueira</p>
+            <p id="p4">Espaço Fitness</p>
+            <p id="p5">Espaço Goumert</p>
+
+        </div>
+          
+        </span>
+
       </div>
+
+      <!-- fim do card 3 -->
+
     </div>
 
-    <h2>Em Construção:</h2>
+
+    <!-- <h2>Em Construção:</h2>
+
     <div class="grid">
-      <div class="card white">
+      <div class="card">
         <img src="./IMG/emFaseConstrucaoPrimeiro.jpg" alt="Projeto sustentável">
-        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
+        <h3>Vila Nova Tatuapé</h3>
+        
         LOCALIZAÇÃO: PIRANGA – SÃO PAULO – SP<br />
         ÁREA CONSTRUÍDA: 140 M²<br />
-        PRAZO DE ENTREGA: 20 MESES<br />
-        <span class="price">R$ 65.000</span>
-      </div>
-      <div class="card blue">
+        PRAZO DE ENTREGA: 20 MESES<br /> -->
+
+        <!-- <span class="price">
+          
+        $ 65.000 -->
+
+          <!-- <div id="card3">
+            <p id="p1">2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
+            <p id="p2">Piscinas</p>
+            <p id="p3">Churrasqueira</p>
+            <p id="p4">Espaço Fitness</p>
+            <p id="p5">Espaço Goumert</p>
+           </div>
+        
+        </span>
+
+      </div> -->
+
+      <!-- <div class="card blue">
         <img src="./IMG/emFaseConstrucaoSegunda.jpg" alt="Projeto sustentável">
         <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
         LOCALIZAÇÃO: BRAZ LEME – SÃO PAULO – SP<br />
@@ -156,7 +257,7 @@
         PRAZO DE ENTREGA: 18 MESES<br />
         <span class="price">R$ 60.000</span>
       </div>
-    </div>
+    </div> -->
 
     <section id="contato" class="contato">
       <div id= 'PF'>
