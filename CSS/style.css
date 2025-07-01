@@ -4,7 +4,14 @@ Reset e base
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+.logoEmpresa{
+  width: auto;
+  height: auto;
 }
 
 /* div{
@@ -16,7 +23,12 @@ Reset e base
 body{
     background-color: #5E5E5E;
     color: #FFF6ED;
-}
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+  }
+
 
 header.header {
   background-color: #15297C;

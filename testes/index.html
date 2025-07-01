@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConstruLife</title>
+<link rel="stylesheet" href="./CSS/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach((card) => {
+        const img = card.querySelector('img');
+        const content = document.createElement('div');
+        content.classList.add('card-content');
+
+        // Pega e move os elementos de texto abaixo da imagem para dentro da div .card-content
+        const children = Array.from(card.children).slice(1);
+        children.forEach(child => content.appendChild(child));
+        card.appendChild(content);
+
+        img.addEventListener('click', () => {
+          content.classList.toggle('show');
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+  
+
+  <header class="header">
+    <div class="logo">ConstruLife</div>
+    <!-- <input type="text" placeholder="Pesquisar..." class="search-bar"> -->
+    <nav class="menu" onclick="toggleMenu()">MENU ☰</nav>
+    <ul id="menu-items" class="menu-items">
+      <li><a href="./home.html.html">Home</a></li>
+      <li><a href="./index.html">Sobre nós</a></li>
+      <li><a href="./financiamento.html">Financiamento</a></li>
+      <!-- <li><a href="#tituloP">Sustentabilidade</a></li>
+      <li><a href="#contato">Contato</a></li> -->
+    </ul>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <div class="intro-text">
+        <h1>Bem-vindo à ConstruLife</h1>
+        <p>
+          ConstruLife tem o foco em mudar esse conceito, conciliando tecnologia e sustentabilidade, com o toque especial de cuidado com o meio ambiente, transformando assim a vida das pessoas e um pouco do mundo.
+        </p>
+      </div>
+      <img src="./IMG/primeiraDoCarrossel.jpg" alt="Projeto sustentável">
+    </section>
+
+<section id="sobre" class="sobre">
+      <h2>Sobre a Nossa Empresa</h2>
+      <p>
+        A ConstruLife surgiu com o propósito de transformar o mercado da construção, unindo inovação tecnológica, sustentabilidade e atendimento humano.
+      </p>
+</section>
+
+    <section id="obras" class="obras">
+      <h2>Nossas Obras</h2>
+
+        <h2>Lançamentos:</h2>
+    <div class="grid">
+      <div class="card blue">
+        <img src="./IMG/lancamentoPrimeira.jpg" alt="Projeto sustentável">
+        <strong>PRÉDIO SUSTENTÁVEL DE PEQUENO PORTE</strong><br />
+        LOCALIZAÇÃO: PITUERA – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 138 M²<br />
+        PRAZO DE ENTREGA: 18 MESES<br />
+        <span class="price">PREÇO COBRADO AO CLIENTE: R$ 59.000</span>
+      </div>
+      <div class="card white">
+        <img src="./IMG/lancamentoSegunda.jpg" alt="Projeto sustentável">
+        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE</strong><br />
+        LOCALIZAÇÃO: LAGOA DA CONCEIÇÃO – FLORIANÓPOLIS – SC<br />
+        ÁREA CONSTRUÍDA: 145 M²<br />
+        PRAZO DE ENTREGA: 19 MESES<br />
+        <span class="price">PREÇO COBRADO AO CLIENTE: R$ 59.000</span>
+      </div>
+      <div class="card blue">
+        <img src="./IMG/lancamentoTerceira.jpg" alt="Projeto sustentável">
+        <strong>CASA SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
+        LOCALIZAÇÃO: ALTO DE PINHEIROS – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 160 M²<br />
+        PRAZO DE ENTREGA: 22 MESES<br />
+        <span class="price">R$ 69.000</span>
+      </div>
+    </div>
+
+    <h2>Em Construção:</h2>
+    <div class="grid">
+      <div class="card white">
+        <img src="./IMG/emFaseConstrucaoPrimeiro.jpg" alt="Projeto sustentável">
+        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
+        LOCALIZAÇÃO: PIRANGA – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 140 M²<br />
+        PRAZO DE ENTREGA: 20 MESES<br />
+        <span class="price">R$ 65.000</span>
+      </div>
+      <div class="card blue">
+        <img src="./IMG/emFaseConstrucaoSegunda.jpg" alt="Projeto sustentável">
+        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE COM PAINÉIS SOLARES</strong><br />
+        LOCALIZAÇÃO: BRAZ LEME – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 145 M²<br />
+        PRAZO DE ENTREGA: 18 MESES<br />
+        <span class="price">R$ 60.000</span>
+      </div>
+      <div class="card white">
+        <img src="./IMG/emFaseConstrucaoTerceiro.jpg" alt="Projeto sustentável">
+        <strong>PRÉDIO SUSTENTÁVEL DE MÉDIO PORTE</strong><br />
+        LOCALIZAÇÃO: LAGOA DA CONCEIÇÃO – FLORIANÓPOLIS – SC<br />
+        ÁREA CONSTRUÍDA: 145 M²<br />
+        PRAZO DE ENTREGA: 19 MESES<br />
+        <span class="price">R$ 59.000</span>
+      </div>
+    </div>
+
+    <h2>Futuras Construções:</h2>
+    <div class="grid">
+      <div class="card blue">
+        <img src="./IMG/futurasConstrucaoPrimeira.jpg" alt="Projeto sustentável">
+        <strong>CASA SUSTENTÁVEL DE MÉDIO PORTE</strong><br />
+        LOCALIZAÇÃO: BRAZ LEME – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 150 M²<br />
+        PRAZO DE ENTREGA: 20 MESES<br />
+        <span class="price">R$ 69.000</span>
+      </div>
+      <div class="card white">
+        <img src="./IMG/futurasConstrucaoSegunda.jpg" alt="Projeto sustentável">
+        <strong>CASA SUSTENTÁVEL DE MÉDIO PORTE</strong><br />
+        LOCALIZAÇÃO: DAPA – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 150 M²<br />
+        PRAZO DE ENTREGA: 20 MESES<br />
+        <span class="price">R$ 69.000</span>
+      </div>
+      <div class="card blue">
+        <img src="./IMG/futurasConstrucaoTerceira.jpg" alt="Projeto sustentável">
+        <strong>CASA SUSTENTÁVEL DE PEQUENO PORTE COM PAINÉIS SOLARES</strong><br />
+        LOCALIZAÇÃO: JARDINS – SÃO PAULO – SP<br />
+        ÁREA CONSTRUÍDA: 138 M²<br />
+        PRAZO DE ENTREGA: 18 MESES<br />
+        <span class="price">R$ 60.000</span>
+      </div>
+    </div>
+
+    <section id="contato" class="contato">
+      <div id= 'PF'>
+        <h2 id= 'VP3'>
+            Fale conosco
+        </h2>
+  
+        <p>
+            Olá, que bom que ficou interessado em entrar em contato conosco. Preencha o formulário para
+            que um de nossos atendentes entre em contato com você o mais breve possível.
+            Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato através
+        </p>
+        <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto." class="imgET"> <img src="./IMG/telefone.png" alt="icone de telefone"></a>
+        
+    </div>
+      <div class="social-icons">
+        <a href="./IMG/social_zap.png" href="">🔵</a>
+        <a href="./IMG/social_insta.png" href="">🔵</a>
+        <a href="./IMG/social_google.png" href="">🔵</a>
+        <a href="./IMG/">🔵</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>© 2025 ConstruLife • Todos os direitos reservados</p>
+      <div class="info-footer">
+        <p>Sobre nós</p>
+        <p>Redes sociais</p>
+        <p>Localização</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="./JS/main.js"></script>
+
+</body>
+</html>
