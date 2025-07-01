@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConstruLife | Financiamento</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/financiamentoStyle.css">
     <script defer>
     document.addEventListener('DOMContentLoaded', () => {
       const cards = document.querySelectorAll('.card');
@@ -199,11 +199,13 @@
                 Qual valor total dessa soma? <p>Se for apenas você, indique o seu salário.</p>
               </span>
               <div class="btns">
-                <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>$ 0,00</p>
+                <input type="number" class="btnOK " id="rendaBruta" style="font-size: 20px; margin-left: 20px;"><p>$ 0,00</p>
+                <!-- <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>$ 0,00</p> -->
                 <!-- <button class="btnOK" onclick="closeModal()">eu e + uma pessoa</button>
                 <button class="btnOK" onclick="closeModal()">eu e + duas pessoas</button> -->
                 <!-- <button class="btnOK" onclick="closeModal()">Zona Leste</button>
                 <button class="btnOK" onclick="closeModal()">Zona Oeste</button> -->
+                <button class="btnClose" onclick="nextStep()">Proximo</button>
                 <button class="btnClose" onclick="closeModal()">Close</button>
               </div>
               <hr />
@@ -218,10 +220,13 @@
               </span>
               
               <div class="btns">
-                <button class="btnOK" onclick="nextStep()">Simular financiamento</button>
-                <!-- <button class="btnOK" onclick="closeModal()">Centro</button>
+                <input type="number" class="btnOK " id="FGTS" style="font-size: 20px; margin-left: 20px;"><p>$ 0,00</p>
+                <!-- <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>R$ 0,00</p> -->
+                <!-- <button class="btnOK" onclick="closeModal()">Zona Sul</button>
+                <button class="btnOK" onclick="closeModal()">Centro</button>
                 <button class="btnOK" onclick="closeModal()">Zona Leste</button>
                 <button class="btnOK" onclick="closeModal()">Zona Oeste</button>-->
+                <button class="btnClose" onclick="CalculoFinanciamento()">Proximo</button>
                 <button class="btnClose" onclick="closeModal()">Close</button> 
               </div>
               <hr />

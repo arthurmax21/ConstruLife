@@ -70,3 +70,48 @@ window.addEventListener("scroll", () => {
   });
 });
 
+let rendaBrutaFamiliar = document.getElementById("rendaBruta")
+let valorTotalFGTS = document.getElementById("FGTS")
+// Campo com os meses do financiamento
+let mesesDeFinanciamento = 360
+// Variavel resultado final do financiamento após aplicar o valor do FGTS
+let resultadoFinalFinanciamento
+let teste = document.querySelector('#teste')
+
+/*
+    REGRAS PARA A ESCOLHA DA PORCENTAGEM DE ACORDO O VALOR DO SALARIO BRUTO
+    renda em 1.509 até 3018 > 40% ?? 80%
+    renda em 3019 até 4.527 > 60% ?? 60%
+    renda em 4.527 até 7.545 > 30% ?? 30%
+*/
+
+
+// Calculo final do financiamento
+function CalculoFinanciamento() {
+    // Campo para guardar a porcentaem do financiamento
+    let porcentagemDesconto = 0
+    let valorRendaBrutaFamiliar = rendaBrutaFamiliar.value
+    let valorValorTotalFGTS = valorTotalFGTS.value
+
+    if (valorRendaBrutaFamiliar <= 1509 || valorRendaBrutaFamiliar <= 3018) {
+        porcentagemDesconto = 40
+    } else if (valorRendaBrutaFamiliar >= 3019 && valorRendaBrutaFamiliar <= 4527) {
+        porcentagemDesconto = 60
+    } else if (valorRendaBrutaFamiliar >= 4528) {
+        porcentagemDesconto = 80
+    }
+
+    let rendaMinima = valorRendaBrutaFamiliar * (30 / 100);
+
+    let resultadoFinanciamento = rendaMinima * mesesDeFinanciamento;
+
+    let resultadoRetiradaDoFinanciamento = resultadoFinanciamento * (porcentagemDesconto / 100);
+
+    let resultFinacimentoAntesDoFGTS = resultadoFinanciamento - resultadoRetiradaDoFinanciamento;
+
+    resultadoFinalFinanciamento = resultFinacimentoAntesDoFGTS - valorValorTotalFGTS
+
+    //console.log(teste.innerHTML = resultadoFinalFinanciamento)
+
+    console.log(console.log(resultadoFinalFinanciamento))
+}
