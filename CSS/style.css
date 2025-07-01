@@ -9,12 +9,91 @@ Reset e base
   font-weight: 700px;
   font-style: normal;
 }
+
 .conteiner1{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: start;
   justify-content: center;
+
+#obras{
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+
+}
+.grid{ 
+display: grid;
+grid-template-columns: 2fr 2fr;
+grid-template-rows: 2fr 2fr;
+padding: 30px;
+justify-content: center;
+color: #FFF6ED;
+}
+
+
+  /* Grid de cards
+  .grid {
+    padding: 30px;
+    justify-content: center;
+    color: #FFF6ED;
+  } */
+  
+  /* Card */
+  .card {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 100s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card-content {
+    display: none;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .card-content.show {
+    display: block;
+  }
+  
+  /* Animação ao aparecer */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Texto */
+  .card-content strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #FFF6ED;
+  }
+  
+  .card-content .price {
+    color: #32cd32;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
 
 }
 .logoEmpresa{
@@ -28,19 +107,22 @@ Reset e base
     flex-wrap: wrap;
 }: */
 
-body{
+/* body{
     background-color: #5E5E5E;
     color: #FFF6ED;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 700px;
     font-style: normal;
-  }
+  } */
 
 
+.header {
+  background-color: #15297C;
 header.header {
   background-color: #e4e7ea;
   display: flex;
+  justify-content: flex-start;  
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -50,8 +132,31 @@ header.header {
 }
 
 .logo {
-  font-size: 1.5 rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr;
+  height: 300px;
+  justify-content: flex-start;
+  font-size: 1rem;
   font-weight: bold;
+  align-items: center;
+}
+
+#logoEmpresa{
+  grid-column: 1 / 1 ;
+  grid-row: 1 / 1 ;
+  width: 9rem;
+  height: 9rem;
+}
+
+#textLogo{
+  grid-column: 2 ;
+  grid-row: 1;
+  justify-content: flex-end;
+}
+
+#menu{
+  font-size: 1.5rem;
 }
 
 .h1{
@@ -62,9 +167,8 @@ header.header {
   width: 30%;
   height: 20%;
 }
-.h2About{
-  
-}
+
+
 
 /* .search-bar {
   flex: 1;
@@ -104,8 +208,19 @@ header.header {
   background: #15297C;
   padding: 40px 20px;
   text-align: center;
-}
 
+  }
+#h1Welcome{
+  font-size: 5rem;
+
+}
+#p1{
+  font-size: 2rem;
+}
+#img1{
+  width: 50%;
+  height: 30%;
+}
 .intro img, #impactoSocial img {
   max-width: 100%;
   height: auto;
@@ -113,11 +228,6 @@ header.header {
   border-radius: 10px;
 }
 
-.obras {
-  background: #5E5E5E;
-  padding: 40px 20px;
-  text-align: center;
-}
 
 .categoria {
   margin-bottom: 40px;
@@ -239,68 +349,7 @@ footer {
     border-radius: 10px;
   }
   
-  /* Grid de cards */
-  .grid {
-    padding: 30px;
-    justify-content: center;
-    color: #FFF6ED;
-  }
-  
-  /* Card */
-  .card {
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: transform 100s;
-  }
-  
-  .card:hover {
-    transform: scale(1.03);
-    transition: transform 0.3s;
-  }
-  
-  .card img {
-    width: 100%;
-    display: block;
-  }
-  
-  .card-content {
-    display: none;
-    padding: 20px;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  .card-content.show {
-    display: block;
-  }
-  
-  /* Animação ao aparecer */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Texto */
-  .card-content strong {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #FFF6ED;
-  }
-  
-  .card-content .price {
-    color: #32cd32;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
+
   /* Seções */
   section {
     padding: 40px 20px;
