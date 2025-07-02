@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Projetos - ConstruSmart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <section id="intro" class="intro">
+        <div class="intro-text">
+          <h1>Bem-vindo à ConstruLife</h1>
+          <p>
+            Especialistas em construção sustentável com responsabilidade social e ambiental. Realizamos seu sonho com qualidade e compromisso.
+          </p>
+        </div>
+        <img src="img/capa.jpg" alt="Projeto sustentável">
+      </section>
+      <section id="obras" class="obras">
+        <h2>Nossas Obras Em</h2>
+  <h2>Lançamentos:</h2>
+  <div class="card-container">
+    <div class="card" onclick="toggleCard(this)">
+      <img src="casa.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: PITUEIRA – SÃO PAULO – SP<br>
+        ÁREA CONSTRUÍDA: 138 M²<br>
+        PRAZO DE ENTREGA: 18 MESES
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="casa.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: LAGOA DA CONCEIÇÃO – FLORIANÓPOLIS – SC<br>
+        ÁREA CONSTRUÍDA: 145 M²<br>
+        PRAZO DE ENTREGA: 19 MESES
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="casa.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: ALTO DE PINHEIROS – SÃO PAULO – SP<br>
+        ÁREA CONSTRUÍDA: 160 M²<br>
+        PRAZO DE ENTREGA: 22 MESES
+      </div>
+    </div>
+  </div>
+
+  <h2>Construção:</h2>
+  <div class="card-container">
+    <div class="card" onclick="toggleCard(this)">
+      <img src="./lancamentoTerceira.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: PIRANGA – SÃO PAULO – SP<br>
+        ÁREA CONSTRUÍDA: 140 M²<br>
+        PRAZO DE ENTREGA: 20 MESES
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="casa.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: BRAZ LEME – SÃO PAULO – SP<br>
+        ÁREA CONSTRUÍDA: 145 M²<br>
+        PRAZO DE ENTREGA: 18 MESES
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="casa.jpg" alt="Projeto sustentável">
+      <div class="info">
+        <strong>Projeto sustentável</strong><br>
+        LOCALIZAÇÃO: LAGOA DA CONCEIÇÃO – FLORIANÓPOLIS – SC<br>
+        ÁREA CONSTRUÍDA: 145 M²<br>
+        PRAZO DE ENTREGA: 19 MESES
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCard(clickedCard) {
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(card => {
+        if (card !== clickedCard) {
+          card.classList.remove('open');
+        }
+      });
+      clickedCard.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
