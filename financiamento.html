@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,47 +106,8 @@
       <div class= 'imgCaFG'>
         <img src="./IMG/logo_fgts.png" alt="Logo FGTS" id= "FG">
       </div>
-      <div id= "conteinerSuaCasa">
-            <b id="SuaCa">Sua casa própria está na contrulife</b>
-            <div class="icon" id= icones1>
-                <img src="./IMG/predio_azul.png" alt="Logo FGTS" >
-                <p>
-                    unidades apartir de R$ 181 mil
-                </p>
-            </div>
-
-            <div class="icon" id= icones2>
-                <img src="./IMG/contract_azul.png" alt="documento">
-                <p>
-                    documentação grátis
-                </p>
-            </div>
-
-            <div class="icon" id= icones3>
-                <img src="./IMG/pay_azul.png" alt="pagamento">
-                <p>
-                    renda familiar a partir de r$ 2.125,20
-                </p>
-            </div>
-
-            <div class="icon" id= icones4>
-                <img src="./IMG/money_azul.png" alt="dinheiro">
-                <p>
-                    pagamento e entrada facilitado
-                </p>
-            </div>
-
-            <div class="icon" id= icones5>
-                <img src="./IMG/brazil_azul.png" alt="Brasil" id= FG>
-                <p>
-                    aptos. nas melhores regiôes de São Paulo
-                </p>
-            </div>
-            
-        </div>
-
-    </div>
-  </div>
+   </div>
+</div>
 
     <div id= 'conteinerBotaoiSimulacao'>
         <p id= 'VP2'> Agora que você já sabe um pouco mais sobre as vantagens, vamos simular seu financiamento
@@ -199,12 +160,10 @@
                 Qual valor total dessa soma? <p>Se for apenas você, indique o seu salário.</p>
               </span>
               <div class="btns">
-                <input type="number" class="btnOK " id="rendaBruta" style="font-size: 20px; margin-left: 20px;"><p>$ 0,00</p>
-                <!-- <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>$ 0,00</p> -->
-                <!-- <button class="btnOK" onclick="closeModal()">eu e + uma pessoa</button>
-                <button class="btnOK" onclick="closeModal()">eu e + duas pessoas</button> -->
-                <!-- <button class="btnOK" onclick="closeModal()">Zona Leste</button>
-                <button class="btnOK" onclick="closeModal()">Zona Oeste</button> -->
+                <div>
+                  <span style="height: 20px; margin: 0;">R$</span>
+                  <input type="number" class="btnOK " id="rendaBruta" style="font-size: 20px;">
+                </div>
                 <button class="btnClose" onclick="nextStep()">Proximo</button>
                 <button class="btnClose" onclick="closeModal()">Close</button>
               </div>
@@ -221,11 +180,6 @@
               
               <div class="btns">
                 <input type="number" class="btnOK " id="FGTS" style="font-size: 20px; margin-left: 20px;"><p>$ 0,00</p>
-                <!-- <input type="range" class="btnOK" id="dinheiro" onclick="nextStep()"><p>R$ 0,00</p> -->
-                <!-- <button class="btnOK" onclick="closeModal()">Zona Sul</button>
-                <button class="btnOK" onclick="closeModal()">Centro</button>
-                <button class="btnOK" onclick="closeModal()">Zona Leste</button>
-                <button class="btnOK" onclick="closeModal()">Zona Oeste</button>-->
                 <button class="btnClose" onclick="CalculoFinanciamento()">Proximo</button>
                 <button class="btnClose" onclick="closeModal()">Close</button> 
               </div>
@@ -239,23 +193,20 @@
               <span>
                 Parabéns! Foi calculado o seu potencial de financiamento com base nos dados que você nós informou.
               </span>
-              
-              <div class="btns">
+
                 <div class="btns">
-                  <div>Com uma renda de <p>R$ 0,00</p></div>
-                  <div>E seu FGTS de<p>R$ 0,00</p></div>
-                  <div>E seu FGTS de<p>R$ 0,00</p></div>
-                  <div>é possível financiar até <p>R$ 0.00</p></div>
+                  <div class="informacaoFinancimento">Com uma renda de <p id="CampoRenda"></p></div>
+                  <div class="informacaoFinancimento">E seu FGTS de<p id="valorFGTS"></p></div>
+                  <div class="informacaoFinancimento">é possível financiar até <p id="ResultFinancimaneto" pattern="^\d{1,3}(\.\d{3})*,\d{2}$"></p></div>
                    <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto."><button class="btnOK" onclick="nextStep()" href>Quero financiar</button></a>
                   <button class="btnClose" onclick="closeModal()">Close</button> 
                 </div>
                 <hr />
-              </div>
-              </div>
-              <hr />
             </div>
+              <hr />
           </div>
         </div>
+      </div>
     </div>
       
   </div>
