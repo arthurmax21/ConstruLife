@@ -1,0 +1,225 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #2f4f4f;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #006400;
+  }
+  
+  /* CONTAINER GERAL */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* TÍTULOS */
+  .tituloP {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0 20px;
+  }
+  
+  #tituloHistoria {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* SOBRE NÓS */
+  .divSobreNos {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .sobreNos1 {
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  #casa {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  /* MISSÃO, VISÃO, VALORES */
+  #MVVSO {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+    gap: 20px;
+  }
+  
+  .MV, #visão, #valo {
+    background-color: #e6f5ea;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .MV h3, #visão h3, #valo h3 {
+    text-align: center;
+    color: #2e8b57;
+  }
+  
+  /* SERVIÇOS */
+  #servicoOferece {
+    margin: 50px 0;
+  }
+  
+  .lista-servicos {
+    columns: 2;
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* SUSTENTABILIDADE */
+  #impactoSocial {
+    margin: 40px 0;
+  }
+  
+  #impactoSocial img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #textoS {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* ESG */
+  .ESG {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+  .ESG h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2e8b57;
+  }
+  
+  .imgESG {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .caixaDeTextoESG {
+    background-color: #f0f8f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .tituloESG {
+    font-size: 1.8rem;
+    color: #2e8b57;
+    margin-bottom: 10px;
+  }
+  
+  .subtituloESG {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .textoESG {
+    margin: 10px 0;
+  }
+  
+  .textoESG1 {
+    margin: 10px 0;
+    font-style: italic;
+  }
+  
+  /* FORMULÁRIO DE CONTATO */
+  #PF {
+    margin: 60px 0;
+    background-color: #eafaf1;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  #VP3 {
+    text-align: center;
+    color: #2e8b57;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #PF p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .imgET img {
+    width: 50px;
+    margin-top: 10px;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .divSobreNos {
+      flex-direction: column;
+    }
+  
+    #MVVSO {
+      flex-direction: column;
+    }
+  
+    .lista-servicos {
+      columns: 1;
+    }
+  
+    .ESG {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .ESG h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
