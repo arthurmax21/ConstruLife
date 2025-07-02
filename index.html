@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> ConstruLife </title>
   <link rel="stylesheet" href="./CSS/index-stryle.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   
 
 
@@ -13,132 +15,102 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   
-  </div>
 
-  <main>
+
+<main>
 
 <!-- Inicio do banner -->
 
-    <section id="banner">
+<section >
 
-      <div>
+      <div id="banner">
 
-      <h3> Encontre seu imóvel </h3>
-      <img  src="./IMG/banner.jpg" alt="BANNER ConstruLife">
+      <h3 id="textoBanner"> Encontre seu imóvel </h3>
+
+      <img id="imagemBanner" src="./IMG/banner.jpg" alt="BANNER ConstruLife">
 
       </div>
 
-      <img  src="./IMG/primeiraDoCarrossel.jpg" alt="Projeto sustentável">
+</section>
 
-    </section>
+<!-- Fim do banner -->
+
 
 <section>
 
       <h2> Sobre a Nossa Empresa </h2>
+      
       <p>
         A ConstruLife surgiu com o propósito de transformar o mercado da construção, unindo inovação tecnológica, sustentabilidade e atendimento humano.
       </p>
 
 </section>
 
-    <section>
-
-        <!-- inicio card1 -->
-
-        <h2>Lançamentos:</h2>
-
-    
-
-      <div>
-
-        <img src="./IMG/lancamentoPrimeira.jpg" alt="Projeto sustentável">
-        <h3>Modern Pirituba</h3>
-        <h5>Pirituba</h5>
 
 
-        <span>
-        
-          <div>
+<!-- Card bootstrap -->
 
-          <p>2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
-          <p>Piscinas</p>
-          <p>Churrasqueira</p>
-          <p>Espaço Fitness</p>
-          <p>Espaço Goumert</p>
+<div class="card-group">
+  <div class="card">
+  
+    <img src="./IMG/modern_pirituba.jpeg" class="card-img-top" alt="modern Pirituba">
 
-          </div>
+    <div class="card-body">
 
-        </span>
-
-      </div>
-
-      <!-- fim card 1 -->
-
-      <!-- Card 2 inicio -->
-
-      <h2> Pronto para morar: </h2>
-
-      <div>
-
-        <img src="./IMG/lancamentoSegunda.jpg" alt="Projeto sustentável">
-
-         <h3>Le Parc Braz Leme</h3>
-
-         <h5>Casa Verde</h5>
-
-        <span>
-          
-
-          <div>
-            
-            <p>2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
-            <p>Piscinas</p>
-            <p>Churrasqueira</p>
-            <p>Espaço Fitness</p>
-            <p>Espaço Goumert</p>
-
-           </div>
-
-        </span>
-
-        
-      </div>
-      
-
-
-      <h2>Em Construção:</h2>
-
-      <div> 
-        
-        
-        <img src="./IMG/lancamentoTerceira.jpg" alt="Projeto sustentável">
-
-      <h3> Grand Club Tatuapé </h3>
-      <h5> Tatuapé </h5>
-       
-        <span>   
-          
-        <div>
-
-            <p>2 dorms. com opção de varanda | suíte | lazer completo com rooftop</p>
-            <p>Piscinas</p>
-            <p>Churrasqueira</p>
-            <p>Espaço Fitness</p>
-            <p>Espaço Goumert</p>
-
-        </div>
-          
-        </span>
-
-      </div>
-
-      <!-- fim do card 3 -->
+      <h5 class="card-title">Modern Pirituba</h5>
+      <p class="card-text">2 Dorms. com opção de varanda | Suíte | Lazer Completo com Rooftop</p>
 
     </div>
 
-    <section>
+    <!-- <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div> -->
+
+  </div>
+
+  <div class="card">
+    <img src="./IMG/le_parc_braz_leme.jpeg" class="card-img-top" alt="Empreendimento Braz Leme">
+
+    <div class="card-body">
+
+      <h5 class="card-title">Le Parc Braz Leme</h5>
+      <p class="card-text">2 dorms. com Opção de varanda | Suíte | Lazer Completo com Rooftop</p>
+
+    </div>
+
+    <!-- <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div> -->
+
+  </div>
+
+  <div class="card">
+
+    <img src="./IMG/tatuapee.jpeg" class="card-img-top" alt="Empreendimento Tatuapé">
+
+    <div class="card-body">
+
+      <h5 class="card-title"> Grand Club Tatuapé </h5>
+      <p class="card-text"> 3 dorms. com Opção de Varanda | Suíte | Lazer Surpreedente </p>
+    </div>
+
+    <!-- <div class="card-footer">
+
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+
+    </div> -->
+
+  </div>
+
+</div>
+
+<!-- Card bootstrap -->
+
+
+    <section id="FaleConosco">
 
       <div>
 
@@ -161,7 +133,8 @@
 
   
 
-  <script src="./JS/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
 </body>
 
 
