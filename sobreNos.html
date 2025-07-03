@@ -3,279 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConstruLife | Sobre nós</title>
-    <link rel="stylesheet" href="./CSS/financiamentoStyle.css">
-
-    <script defer>
-    document.addEventListener('DOMContentLoaded', () => {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach((card) => {
-        const img = card.querySelector('img');
-        const content = document.createElement('div');
-        content.classList.add('card-content');
-
-        // Pega e move os elementos de texto abaixo da imagem para dentro da div .card-content
-        const children = Array.from(card.children).slice(1);
-        children.forEach(child => content.appendChild(child));
-        card.appendChild(content);
-
-        img.addEventListener('click', () => {
-          content.classList.toggle('show');
-        });
-      });
-    });
-  </script>
-
+    <title>Sobre a Nossa Empresa</title>
+    <link rel="stylesheet" href="/CSS/sobre-nos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
+    
 
-    <div class="container">
-        <h1 class = 'tituloP'> Sobre a nossa empresa </h1>
-        <h2 id= 'tituloHistoria'> Nossa história</h2><br>
-        <div class= 'divSobreNos'>
-            
-            <p class= 'sobreNos1'> 
-                
-                A ConstruLife teve seu início em meados dos anos 2020, surgiu com o propósito de revolucionar 
-                o setor da construção civil brasileira por meio de soluções que unissem eficiência energética,
-                inovação tecnológica e responsabilidade social. Visando fazer a sua parte ambiental num meio 
-                onde não há uma gestão de recursos ambientais plausível e o cuidado com o meio ambiente 
-                muitas vezes escasso, até mesmo inexistente. ConstruLife tem o foco em mudar esse conceito, 
-                conciliando tecnologia e sustentabilidade, com o toque especial de cuidado com o meio ambiente, 
-                transformando assim a vida das pessoas e um pouco do mundo. A ConstruLife usa tudo que é sustentável 
-                e as melhores tecnologias, desde os projetos até as estruturas, e o cuidado com todo o material a ser utilizado, 
-                dando o descarte correto a todos os resíduos provenientes dos projetos da empresa.
-                Com sede em Braz Leme Casa Verde, a construlife rapidamente se consolidou como referência nacional 
-                no desenvolvimento de habitações sustentáveis e inteligentes, atendendo tanto projetos residenciais quanto 
-                iniciativas sociais e comunitárias.
-                Desde sua criação, a ConstruLife atua de forma integrada aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.
-                Seu diferencial é a forte atuação social, não apenas por construir moradias sustentáveis, mas por promover inclusão,
-                empregar mão de obra local, e realizar projetos com foco em comunidades em situação de vulnerabilidade.
-            </p>
-            <img src="./IMG/textoDaHitoria.jpg" alt="casa com um jardim e algumas arvores" id="casa">
-
-        </div>
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container-fluid" style="width: 80%; margin: auto;">
         
-        <div id= "MVVSO">
-            <div class= 'MV'>
-                <h3>
-                    Missão
-                </h3>
-                <p> 
-                    Fornecer soluções habitacionais sustentáveis e tecnológicas,<br>
-                    Promover qualidade de vida <br>
-                    Economia <br>
-                    Consciência ambiental para pessoas e comunidades. <br>
-                </p>
-                
-            </div>
-            
-            <div id= 'visão'>
-                <h3>
-                    Visão
-                </h3>
-                
-                <p> 
-                    Ser referência nacional e internacional em construções 
-                    sustentáveis até 2030, expandindo o acesso 
-                    à moradia de qualidade com impacto
-                    positivo no meio ambiente e na sociedade.
-                </p>
-                
-            </div>
-            
-            <div class= 'MV' id="valo">
-                <h3>
-                    Valores
-                </h3>
-                <p>
-                    Sustentabilidade Regenerativa <br>
-                    Inovação e Tecnologia com Propósito <br>
-                    Inclusão social e valorização da diversidade <br>
-                    Respeito pelo Planeta <br>
-                    Circularidade e Eficiência <br>
-                    Bem-estar Humano <br>
-                    Design Integrado
-                </p>
-            </div>
-            
-        </div>
-        <div id= 'servicoOferece'>
-            <h3 id = "sO">
-                 Quais serviços nossa empresa oferece:
-            </h3>
-
-            <ul class="lista-servicos">
-                <li>Hidráulica</li>
-                <li>Elétrica</li>
-                <li>Pintura em geral</li>
-                <li>Projeto de Construção e Reformas</li>
-                <li>Alvenaria</li>
-                <li>Pisos e revestimento</li>
-                <li>Construção pesada</li>
-                <li>Terraplenagem, pavimentação, obras de drenagem</li>
-                <li>Conjuntos residenciais e habitacionais</li>
-                <li>Escolas, prédios públicos, estádios</li>
-                <li>Hospitais, penitenciárias</li>
-                <li>Saneamento em geral</li>
-            </ul>
-                
-        </div>
-
-
-
-        <div>
-            <h2 class='tituloP'> Sustentabilidade na nossa empresa</h2>
-            <div id="impactoSocial">
-  <img id="imgsustentabilidade" src="./IMG/sustentabilidadeHistoriaDaEmpresa.jpg" alt="Casa com um jardim e algumas árvores">
-
-  <p id="textoS">
-    A ConstruLife possui um setor exclusivo voltado para projetos de impacto social. A empresa atua ativamente em 
-    comunidades de baixa renda, oferecendo consultorias gratuitas, modelos de moradia popular sustentável e 
-    treinamentos técnicos para jovens e adultos em situação de vulnerabilidade, promovendo educação profissional e geração de renda local.
-  </p>
-
-  <p>
-    Além disso, é parceira de ONGs e iniciativas públicas que incentivam a moradia digna e ambientalmente consciente. Em cada projeto 
-    executado, a empresa considera o contexto social da região, ouvindo as comunidades e adaptando suas soluções tecnológicas e sustentáveis à realidade local.
-  </p>
-
-  <ul>
-    <li>Educação Ambiental</li>
-    <li>Oficinas para clientes sobre práticas sustentáveis</li>
-    <li>Manutenção de casas ecológicas</li>
-    <li>Cursos com certificação sobre boas práticas sustentáveis</li>
-    <li>Financiamento e Incentivos Verdes</li>
-    <li>Parcerias com instituições financeiras para financiamentos</li>
-  </ul>
-</div>
-
-                    
-            </div>
-            
-                <div class= 'ESG'>
-                    <h2 id= 'E'>E</h2> 
-                    
-                    <h2 id= 'S'>S</h2>
-                    
-                    <h2 id = 'G'>G</h2>
-                </div>
-                <img src="./IMG/sustentabilidade.png" alt="Arvore em uma cupula flutuando" class= imgESG id="imgESG1"> 
-                <div class= 'caixaDeTextoESG'> 
-                
-                <div id="caixaDeTextoESG1">
-                    <h3 class = 'tituloESG'>Ambiental (E)</h3>
-                    <b class = 'subtituloESG'>
-                        Construir o futuro sem destruir o presente
-                    </b>
-                    <p class = 'textoESG'>
-                        Na ConstruLife, a gente leva sustentabilidade a sério, mas sem complicar. 
-                        Usamos materiais que respeitam o planeta apostamos em soluções inteligentes
-                    </p>
-                    <b class = 'subtituloESG'>
-                        Projeto Carbono Zero+
-                    </b>
-                    <p class = "textoESG">
-                        Além de zerar nossas emissões de CO₂, vamos lançar um programa próprio
-                        de reflorestamento e recuperação de áreas degradadas.
-                    </p>
-                    <b class = 'subtituloESG'>
-                        Construção com consciência
-                    </b>
-                    <p class = 'textoESG'>
-                        estamos investindo em construção circular: reciclamos resíduos, usamos o que 
-                        já existe e desenhamos obras pensando no futuro mais duráveis, adaptáveis e sustentáveis.
-                    </p>
-
-                </div>
+        <!-- TÍTULO DA SEÇÃO -->
+        <h1 class="section-title">Sobre a Nossa Empresa</h1>
         
+        <!-- SEÇÃO SOBRE -->
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Construtora foi criada em 2008 e tem como objetivo oferecer soluções completas em construção civil, sempre priorizando a qualidade, segurança e sustentabilidade em todos os nossos projetos.</p>
+                    <p>Nossa empresa se destaca pela excelência no atendimento, cumprimento de prazos e pela utilização de tecnologias inovadoras que garantem a satisfação total de nossos clientes.</p>
                 </div>
-                <img src="./IMG/social.png" alt="Reunião" class= imgESG id="imgESG1">
-                <div class= 'caixaDeTextoESG'> 
-                    
-                    <div id="caixaDeTextoESG2">
-                        <h3 class = 'tituloESG'>Social (S)</h3><br>
-                    <b class = 'subtituloESG'>
-                            Gente no centro de tudo
-                    </b>
-                    <p class = 'textoESG'>
-                        Aqui, a gente acredita que construir vai muito além de levantar paredes. Estamos lado a 
-                        lado com comunidades de baixa renda, oferecendo consultoria gratuita, cursos técnicos 
-                        e projetos de moradia sustentável.hhh
-                    </p><br>
-                    <b class = 'subtituloESG'>
-                        Diversidade é parte do time
-                    </b>
-                    <p class = 'textoESG1'>
-                        Na ConstruLife, todo mundo tem vez. Criamos programas de inclusão voltados para mulheres,
-                        pessoas com deficiência, minorias étnicas e LGBTQIA+.
-                    </p><br>
-                    <b class = 'subtituloESG'>
-                        Educação que transforma
-                    </b>
-                    <p class = 'textoESG'>
-                        A gente não só ensina a construir, mas também constrói conhecimento. Em parceria com escolas
-                        e ONGs, criamos programas de formação para jovens e adultos
-                    </p>
-                    </div>
-        
-                    </div>
-
-                <img src="./IMG/governanca.png" alt="analise de dados" class= imgESG id="imgESG2">
-                <div class= 'caixaDeTextoESG'> 
-                    
-                    <div id="caixaDeTextoESG3">
-                        <h3 class = 'tituloESG'>Governança (G)</h3><br>
-                    <b class = 'subtituloESG'>
-                            Ética é nossa base
-                    </b>
-                    <p class = 'textoESG'>
-                        A base de qualquer construção sólida é a confiança. Por isso, 
-                        temos um comitê de governança que garante total transparência em tudo o que fazemos.
-                    </p><br><br>
-                    <b class = 'subtituloESG'>
-                        Prestamos contas, de verdade
-                    </b>
-                    <p class = 'textoESG'>
-                        Nada de promessas vagas: a gente publica relatórios frequentes com metas,
-                        resultados e impactos bons ou ruins. A verdade sempre vem primeiro.
-                    </p><br>
-                    <b class = 'subtituloESG'>
-                        Ética na prática, todo dia
-                    </b>
-                    <p class = 'textoESG'>
-                        Nosso código de conduta é claro, acessível e vivo. Todo mundo na ConstruLife passa por 
-                        treinamentos e tem canais seguros para falar o que precisa. Aqui, integridade não é discurso é cultura.
-                    </p>
-                    </div>
-        
-                    </div>
-            
+                <div class="about-image">
+                    <img src="/IMG/Logos_20250701_053438_0000-removebg-preview.png" alt="Nossa Empresa">
                 </div>
-            
-        </div>
+            </div>
+        </section>
 
-        <div id= 'PF'>
-            <h2 id= 'VP3'>
-                Fale conosco
-            </h2>
-      
-            <p>
-                Olá, que bom que ficou interessado em entrar em contato conosco. Preencha o formulário para
-                que um de nossos atendentes entre em contato com você o mais breve possível.
-                Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato através
-            </p>
-            <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto." class="imgET"> <img src="./IMG/telefone.png" alt="icone de telefone"></a>
-            
-        </div>
+        <!-- MISSÃO, VISÃO, VALORES -->
+        <section class="mvv-section">
+            <div class="mvv-container">
+                <div class="mvv-card">
+                    <h3 >Missão</h3>
+                    <p>Construir com excelência, oferecendo soluções inovadoras e sustentáveis que superem as expectativas de nossos clientes.</p>
+                </div>
+                <div class="mvv-card">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a melhor construtora da região, referência em qualidade, inovação e responsabilidade social.</p>
+                </div>
+                <div class="mvv-card">
+                    <h3>Valores</h3>
+                    <p>Integridade, qualidade, sustentabilidade, inovação, respeito às pessoas e compromisso com o meio ambiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSOS SERVIÇOS -->
+        <h2 class="section-title">Mais Serviços Nossa Empresa Oferece</h2>
+        <section class="services-section">
+            <div class="services-grid">
+                <div class="service-item">Construção Civil</div>
+                <div class="service-item">Reformas Residenciais</div>
+                <div class="service-item">Projetos Arquitetônicos</div>
+                <div class="service-item">Consultoria Técnica</div>
+                <div class="service-item">Gerenciamento de Obras</div>
+                <div class="service-item">Manutenção Predial</div>
+            </div>
+        </section>
+
+        <!-- SUSTENTABILIDADE -->
+        <h2 class="section-title">Sustentabilidade na Nossa Empresa</h2>
+        <section class="theme-section">
+            <div class="theme-content">
+                <div class="theme-image">
+                    <img src="/IMG/image 2.svg" alt="Sustentabilidade">
+                </div>
+                <div class="theme-text">
+                    <h3>Compromisso Ambiental</h3>
+                    <p>Nossa empresa está comprometida com práticas sustentáveis em todos os nossos projetos. Utilizamos materiais eco-friendly, tecnologias que reduzem o impacto ambiental e promovemos a construção verde.</p>
+                    <p>Investimos continuamente em pesquisa e desenvolvimento para encontrar soluções mais sustentáveis e eficientes para o setor da construção civil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AMBIENTAL -->
+        <h2 class="section-title">Ambiental </h2>
+        <section class="theme-section reverse">
+            <div class="theme-content">
+                <div class="theme-text">
+                    <h3>Preservação do Meio Ambiente</h3>
+                    <p>Desenvolvemos projetos que respeitam e preservam o meio ambiente, utilizando técnicas de construção que minimizam o impacto ecológico.</p>
+                    <p>Nossos processos incluem o uso racional de recursos naturais, gestão adequada de resíduos e implementação de sistemas de energia renovável.</p>
+                </div>
+                <div class="theme-image">
+                    <img src="/IMG/image ambiental.svg" alt="Meio Ambiente">
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL -->
+        <h2 class="section-title">Social </h2>
+        <section class="theme-section">
+            <div class="theme-content">
+                <div class="theme-image">
+                    <img src="/IMG/image social.svg" alt="Responsabilidade Social">
+                </div>
+                <div class="theme-text">
+                    <h3>Responsabilidade Social</h3>
+                    <p>Acreditamos que nossa responsabilidade vai além da construção. Investimos em programas sociais, capacitação profissional e desenvolvimento das comunidades onde atuamos.</p>
+                    <p>Promovemos a inclusão social, igualdade de oportunidades e o bem-estar de nossos colaboradores e da sociedade em geral.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOVERNANÇA -->
+        <h2 class="section-title">Governança </h2>
+        <section class="theme-section reverse">
+            <div class="theme-content">
+                <div class="theme-text">
+                    <h3>Gestão Transparente</h3>
+                    <p>Mantemos os mais altos padrões de governança corporativa, com transparência, ética e responsabilidade em todas as nossas operações.</p>
+                    <p>Nossa gestão é baseada em princípios sólidos de compliance, prestação de contas e tomada de decisões responsáveis.</p>
+                </div>
+                <div class="theme-image">
+                    <img src="/IMG/image governança.svg" alt="Governança">
+                </div>
+            </div>
+        </section>
+
     </div>
 
-
-
-    <script src="./JS/main.js"></script>
-</body>
-        
-</html>
+    <!-- FOOTER -->
+    
 
 </body>
 </html>
