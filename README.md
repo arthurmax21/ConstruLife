@@ -12,11 +12,11 @@ ConstruLife tem o foco em mudar esse conceito, conciliando tecnologia e sustenta
 ##  Nossa Equipe
 
 A equipe da ConstruLife é formada por profissionais altamente capacitados que tornam nossa missão possível:
-- **Vinícius **
-- **Gabriel Sá Bertoli **
-- **Matheus Araújo **
+- **Vinícius**
+- **Gabriel Sá Bertoli**
+- **Matheus Araújo**
 - **Rone**
-- **Manasses **
+- **Arthur**
   
 ---
 
@@ -52,7 +52,6 @@ Ser reconhecida como a melhor construtora da região, referência em qualidade, 
 - **GitHub Pages**: Para hospedagem do projeto;
 - **Canva**: Para criação da logo e identidade visual;
 - **Figma**: Para criação de protótipos e design de interfaces;
----
 ---
 
 ##  Desenvolvido no curso de Desenvolvimento Web
