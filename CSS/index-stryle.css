@@ -18,9 +18,19 @@ font-style: normal;
 }
 #banner{
     width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
     height: 400px;
-    background-image: url("../IMG/banner.jpg");
+    background-image: url("../IMG/banner1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover
+    
+   
 }
+
+
 
 /* #imagemBanner{
     position: relative;
@@ -37,11 +47,6 @@ font-style: normal;
     align-items: center;
     
   }
-
-.card-group{
- 
-
-}
 
 #tituloSobre{
     display: flex;
