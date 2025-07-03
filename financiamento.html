@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConstruLife | Financiamento</title>
-    <link rel="stylesheet" href="./CSS/financiamentoStyle3.css">
-    <script defer>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConstruLife | Financiamento</title>
+  <link rel="stylesheet" href="./CSS/financiamentoStyle.css">
+  <script defer>
     document.addEventListener('DOMContentLoaded', () => {
       const cards = document.querySelectorAll('.card');
       cards.forEach((card) => {
@@ -25,230 +26,358 @@
     });
   </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/header-footerStyle.css">
 </head>
+
 <body>
 
-  <h1 id= 'f'>
+  <!-- HEADER -->
+
+  <header class="navbar" style="background-color: #15297C;">
+    <div class="container-fluid" style="flex-wrap: nowrap;">
+      <a href="./index.html"><img class="logo" src="./IMG/logoCinzaEBege 1.svg" alt=""></a>
+      <form class="d-flex" role="search" style="width: 50rem;">
+        <input class="form-control me-2 campo-busca" type="search" placeholder="Pesquise" aria-label="Search" />
+      </form>
+      <button class="navbar-toggler border-white bg-white botao-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn btn-white"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="border-bottom: 5px solid #5E5E5E; background-color: #15297C;">
+          <img class="logo2" src="./IMG/logoCinzaEBege 1.svg" alt="">
+          <button type="button" class="btn-close border border-white btn btn-outline-light"
+            data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body" style="background-color: #15297C;">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" style="color: white; font-size: 1.6rem;" href="./index.html">Pagina
+                Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./sobreNos.html">Sobre a
+                ConstruLife</a>
+            </li>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Nossas obras</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./financiamento.html">Financiamento</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+
+  <h1 id='f'>
     Financiamento
   </h1>
-  
-  <div id="caixaPF">
-    <p class= "textoPF">
-      O programa de financiamento é uma iniciativa do Governo Federal que oferece facilidades 
-      na compra de imóveis para famílias com renda mensal bruta de até R$ 3.036,00 no âmbito 
-      dos programas de habitação popular.
-    </p>
-  </div>
-  
-  <div id= "conteinervantagens">
-    
-    <h2 id= 'VP'>
-      Vantagens do programa:
-    </h2>
-    
-    <div id= 'caixaVp1'>
-      
-      <div class= 'caixaVP1'>
-        Condições atrativas de financiamento
-      </div>
-      
-      <div class= 'caixaVP2'>
-        financiamento moradia em área urbana
-      </div>
-      
-      <div class= 'caixaVP3'>
-        Reforma ou Adaptação de imóvel
-      </div>
-      
-      <div class= 'caixaVP4'>
-        Atendimento especializado
-      </div>
-      
-      <div class= 'caixaVP5'>
-        Utilização do saldo FGTS
-      </div>
-      
-      <div class= 'caixaVP6'>
-        Financiamento em até 30 anos
-      </div>
-      
-      <div class= 'caixaVP7'>
-        Subsídio de até R$ 29 mil
-      </div> 
-      
+  <main style="margin: auto; width: 90%;">
+    <div id="caixaPF">
+      <p class="textoPF">
+        O programa de financiamento é uma iniciativa do Governo Federal que oferece facilidades
+        na compra de imóveis para famílias com renda mensal bruta de até R$ 3.036,00 no âmbito
+        dos programas de habitação popular.
+      </p>
     </div>
-  </div>
-  <div>
-    <div class= "CFC" >
 
-      <div class= 'imgCaFG'>
-        <img  src="./IMG/Caixa_Econômica_Federal_logo.svg.png" alt="Logo banco Caixa" id = "caixa">
+    <div id="conteinervantagens">
+
+      <h2 id='VP'>
+        Vantagens do programa:
+      </h2>
+
+      <div id='caixaVp1'>
+
+        <div class='caixaVP1'>
+          Condições atrativas de financiamento
+        </div>
+
+        <div class='caixaVP2'>
+          financiamento moradia em área urbana
+        </div>
+
+        <div class='caixaVP3'>
+          Reforma ou Adaptação de imóvel
+        </div>
+
+        <div class='caixaVP4'>
+          Atendimento especializado
+        </div>
+
+        <div class='caixaVP5'>
+          Utilização do saldo FGTS
+        </div>
+
+        <div class='caixaVP6'>
+          Financiamento em até 30 anos
+        </div>
+
+        <div class='caixaVP7'>
+          Subsídio de até R$ 29 mil
+        </div>
+
       </div>
-      
-      <div class= 'imgCaFG'>
-        <img src="./IMG/logo_fgts.png" alt="Logo FGTS" id= "FG">
-      </div>
-      <div id= "conteinerSuaCasa">
-        <b id="SuaCa">Sua casa própria está na contrulife</b>
-        <div class="icon" id= icones1>
-            <img src="./IMG/predio_azul.png" alt="Logo FGTS" >
-            <p>
-                unidades apartir de R$ 181 mil
-            </p>
-        </div>
-
-        <div class="icon" id= icones2>
-            <img src="./IMG/contract_azul.png" alt="documento">
-            <p>
-                documentação grátis
-            </p>
-        </div>
-
-        <div class="icon" id= icones3>
-            <img src="./IMG/pay_azul.png" alt="pagamento">
-            <p>
-                renda familiar a partir de r$ 2.125,20
-            </p>
-        </div>
-
-        <div class="icon" id= icones4>
-            <img src="./IMG/money_azul.png" alt="dinheiro">
-            <p>
-                pagamento e entrada facilitado
-            </p>
-        </div>
-
-        <div class="icon" id= icones5>
-            <img src="./IMG/brazil_azul.png" alt="Brasil" id= FG>
-            <p>
-                aptos. nas melhores regiôes de São Paulo
-            </p>
-        </div>
-        
     </div>
-   </div>
-</div>
+    <div>
+      <div class="CFC">
 
-    <div id= 'conteinerBotaoiSimulacao'>
-        <p id= 'VP2'> Agora que você já sabe um pouco mais sobre as vantagens, vamos simular seu financiamento
-        </p>
-        <button class="btnOpenModal" onclick="openModal()">Quero simular agora</button>
+        <div class='imgCaFG'>
+          <img src="./IMG/Caixa_Econômica_Federal_logo.svg.png" alt="Logo banco Caixa" id="caixa"
+            style="height: 3.5em;">
+        </div>
 
-        <div class="modal-container">
-          <div class="modal">
-            <h2>Simulador de Financiamento</h2>
-            <div class="botãodesimulação">
-              <hr/>
-              <span>
-                Qual a região que você gostaria de morar? 
-              </span>
-              
-              <div class="btns">
-                <button class="btnOK" onclick="nextStep()">Zona Norte</button>
-                <button class="btnOK" onclick="nextStep()">Zona Sul</button>
-                <button class="btnOK" onclick="nextStep()">Centro</button>
-                <button class="btnOK" onclick="nextStep()">Zona Leste</button>
-                <button class="btnOK" onclick="nextStep()">Zona Oeste</button>
+        <div class='imgCaFG'>
+          <img src="./IMG/logo_fgts.png" alt="Logo FGTS" id="FG" style="height: 3.5em;">
+        </div>
+        <div id="conteinerSuaCasa">
+          <b id="SuaCa">Sua casa própria está na Construlife</b>
+
+          <div class="icon" id=icones1>
+            <img src="./IMG/predio_azul.png" alt="Logo FGTS" class="image-suaCasa">
+            <p class="paragrafo-casa">
+              unidades apartir de R$ 181 mil
+            </p>
+          </div>
+
+          <div class="icon" id=icones2>
+            <img src="./IMG/contract_azul.png" alt="documento" class="image-suaCasa">
+            <p class="paragrafo-casa">
+              documentação grátis
+            </p>
+          </div>
+
+          <div class="icon" id=icones3>
+            <img src="./IMG/pay_azul.png" alt="pagamento" class="image-suaCasa">
+            <p class="paragrafo-casa">
+              renda familiar a partir de r$ 2.125,20
+            </p>
+          </div>
+
+          <div class="icon" id=icones4>
+            <img src="./IMG/money_azul.png" alt="dinheiro" class="image-suaCasa">
+            <p class="paragrafo-casa">
+              pagamento e entrada facilitado
+            </p>
+          </div>
+
+          <div class="icon" id=icones5>
+            <img src="./IMG/brazil_azul.png" alt="Brasil" id=FG class="image-suaCasa">
+            <p class="paragrafo-casa">
+              aptos. nas melhores regiôes de São Paulo
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id='conteinerBotaoiSimulacao'>
+      <p id='VP2'> Agora que você já sabe um pouco mais sobre as vantagens, vamos simular seu financiamento
+      </p>
+      <button class="btnOpenModal" onclick="openModal()">Quero simular agora</button>
+
+      <div class="modal-container">
+        <div class="modal">
+          <h2>Simulador de Financiamento</h2>
+          <div class="botaodesimulacao">
+            <hr />
+            <span class="span-financiamento">
+              Qual a região que você gostaria de morar?
+            </span>
+
+            <div class="btns">
+              <button class="btnOK" onclick="nextStep()">Zona Norte</button>
+              <button class="btnOK" onclick="nextStep()">Zona Sul</button>
+              <button class="btnOK" onclick="nextStep()">Centro</button>
+              <button class="btnOK" onclick="nextStep()">Zona Leste</button>
+              <button class="btnOK" onclick="nextStep()">Zona Oeste</button>
+              <button class="btnClose" onclick="closeModal()">Close</button>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="modal">
+          <h2>Simulador de Financiamento</h2>
+          <div class="botaodesimulacao">
+            <hr />
+            <span class="span-financiamento">
+              Qual a quantidade de dormitórios que você procura?
+            </span>
+
+            <div class="btns">
+              <button class="btnOK" onclick="nextStep()">1 dorm.</button>
+              <button class="btnOK" onclick="nextStep()">2 dorm.</button>
+              <button class="btnOK" onclick="nextStep()">3 dorm.</button>
+              <button class="btnOK" onclick="nextStep()">4 dorm. ou +</button>
+              <button class="btnClose" onclick="closeModal()">Close</button>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="modal">
+          <h2>Simulador de Financiamento</h2>
+          <div class="botaodesimulacao">
+            <hr />
+            <span class="span-financiamento">
+              Qual valor total dessa soma? <p>Se for apenas você, indique o seu salário.</p>
+            </span>
+            <div class="btns">
+              <div>
+                <span style="height: 20px; margin: 0;">R$</span>
+                <input type="number" id="rendaBruta" style="font-size: 20px;" required>
+                <span class="mesangemCampo"></span>
+              </div>
+              <div class="ajusteBotaoFinanciamento">
+                <button class="btnClose" onclick="proximoModal()">Proximo</button>
                 <button class="btnClose" onclick="closeModal()">Close</button>
               </div>
-              <hr />
             </div>
+            <hr />
           </div>
-          <div class="modal">
-            <h2>Simulador de Financiamento</h2>
-            <div class="botãodesimulação">
-              <hr/>
-              <span>
-                Qual a quantidade de dormitórios que você procura?
-              </span>
-              
-              <div class="btns">
-                <button class="btnOK" onclick="nextStep()">1 dorm.</button>
-                <button class="btnOK" onclick="nextStep()">2 dorm.</button>
-                <button class="btnOK" onclick="nextStep()">3 dorm.</button>
-                <button class="btnOK" onclick="nextStep()">4 dorm. ou +</button>
-                <button class="btnClose" onclick="closeModal()">Close</button>
+        </div>
+        <div class="modal">
+          <h2>Simulador de Financiamento</h2>
+          <div class="botaodesimulacao">
+            <hr />
+            <span class="span-financiamento">
+              Você possuí FGTS? Se sim, indique o valor.
+            </span>
+
+            <div class="btns">
+              <div>
+                <span style="height: 20px; margin: 0;">R$</span>
+                <input type="number" id="FGTS" style="font-size: 20px; margin-left: 20px;">
+                <span class="mesangemCampo"></span>
               </div>
-              <hr />
-            </div>
-          </div>
-          <div class="modal">
-            <h2>Simulador de Financiamento</h2>
-            <div class="botãodesimulação">
-              <hr/>
-              <span>
-                Qual valor total dessa soma? <p>Se for apenas você, indique o seu salário.</p>
-              </span>
-              <div class="btns">
-                <div>
-                  <span style="height: 20px; margin: 0;">R$</span>
-                  <input type="number" class="btnOK " id="rendaBruta" style="font-size: 20px;">
-                </div>
-                <button class="btnClose" onclick="nextStep()">Proximo</button>
-                <button class="btnClose" onclick="closeModal()">Close</button>
-              </div>
-              <hr />
-            </div>
-          </div>
-          <div class="modal">
-            <h2>Simulador de Financiamento</h2>
-            <div class="botãodesimulação">
-              <hr/>
-              <span>
-                Você possuí FGTS? Se sim, indique o valor.
-              </span>
-              
-              <div class="btns">
-                <input type="number" class="btnOK " id="FGTS" style="font-size: 20px; margin-left: 20px;"><p>$ 0,00</p>
+              <div class="ajusteBotaoFinanciamento">
                 <button class="btnClose" onclick="CalculoFinanciamento()">Proximo</button>
-                <button class="btnClose" onclick="closeModal()">Close</button> 
+                <button class="btnClose" onclick="closeModal()">Close</button>
               </div>
-              <hr />
-          </div>
-        </div>  
-          <div class="modal">
-            <h2>Simulador de Financiamento</h2>
-            <div class="botãodesimulação">
-              <hr/>
-              <span>
-                Parabéns! Foi calculado o seu potencial de financiamento com base nos dados que você nós informou.
-                <div class="informacaoFinancimento">Com uma renda de <p id="CampoRenda"></p></div>
-                  <div class="informacaoFinancimento">E seu FGTS de<p id="valorFGTS"></p></div>
-                  <div class="informacaoFinancimento">é possível financiar até <p id="ResultFinancimaneto" pattern="^\d{1,3}(\.\d{3})*,\d{2}$"></p></div>
-              </span>
-
-                <div class="btns">
-                   <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto."><button class="btnOK" onclick="nextStep()" href>Quero financiar</button></a>
-                  <button class="btnClose" onclick="closeModal()">Close</button> 
-                </div>
-                <hr />
             </div>
-              <hr />
+            <hr />
           </div>
+        </div>
+        <div class="modal">
+          <h2>Simulador de Financiamento</h2>
+          <div class="botaodesimulacao">
+            <hr />
+            <span class="span-financiamento">
+              Parabéns! Foi calculado o seu potencial de financiamento com base nos dados que você nós informou.
+              <div class="informacaoFinancimento">Com uma renda de <p id="CampoRenda"></p>
+              </div>
+              <div class="informacaoFinancimento">E seu FGTS de<p id="valorFGTS"></p>
+              </div>
+              <div class="informacaoFinancimento">é possível financiar até <p id="ResultFinancimaneto"
+                  pattern="^\d{1,3}(\.\d{3})*,\d{2}$"></p>
+              </div>
+            </span>
+
+            <div class="btns">
+              <a
+                href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto."><button
+                  class="btnOK" onclick="nextStep()" href>Quero financiar</button></a>
+              <button class="btnClose" onclick="closeModal()">Close</button>
+            </div>
+            <hr />
+          </div>
+          <hr />
         </div>
       </div>
     </div>
-      
-  </div>
-  <div id= 'PF'>
-      <h2 id= 'VP3'>
-          Fale conosco
+    </div>
+
+    </div>
+    <div id='PF'>
+      <h2 id='VP3'>
+        Fale conosco
       </h2>
 
       <p id="texto">
-          Olá, que bom que ficou interessado em entrar em contato conosco. 
-          Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato clicando no icone abaixo.
-          Que ira de direcionar você para o nosso contato financeiro.
+        Olá, que bom que ficou interessado em entrar em contato conosco.
+        Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato clicando no icone abaixo.
+        Que ira de direcionar você para o nosso contato financeiro.
       </p>
-      <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto." class="imgET"> <img src="./IMG/telefone.png" alt="icone de telefone"></a>
-      
-  </div>
+      <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto."
+        class="imgET"> <img src="./IMG/telefone.png" alt="icone de telefone"></a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer id="rodape-fundo" style="background-color: #15297C; margin-top: 3rem;">
+    <div class="container text-center">
+      <div class="row linha-footer" style="padding-top: 2rem;">
+
+        <div class="col">
+          <h3 class="footerP mapaSite-footer">Mapa do Site</h3>
+
+          <ul class="justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" aria-current="page" style="color: white; font-size: 1.6rem;"
+                href="./index.html">Pagina Inicial</a>
+            </li>
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./sobreNos.html">Sobre a
+                ConstruLife</a>
+            </li>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Nossas obras</a>
+            </li> -->
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./financiamento.html">Financiamento</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col espaco-footer">
+          <h3 class="footerP">Redes Sociais</h3>
+          <div class="div-footer footer-redes">
+            <img class="img-social" src="./IMG/social_zap.png" alt="">
+            <img class="img-social" src="./IMG/social_insta.png" alt="">
+            <img class="img-social" src="./IMG/social_google.png" alt="">
+            <img class="img-social" src="./IMG/social_face.png" alt="">
+          </div>
+        </div>
+
+        <div class="col">
+          <h3 class="footerP">Localização</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9181894647174!2d-46.42737557151221!3d-23.538386669155123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce643b859cb731%3A0xdf7b51240fd3382e!2sEstr.%20Itaquera%20Guaianazes%2C%2030%20-%20Jardim%20Helena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008246-000!5e0!3m2!1spt-BR!2sbr!4v1751480750088!5m2!1spt-BR!2sbr"
+            width="370em" height="250em" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col text-white fs-3"> &copy; 2025 ConstruLife • Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
   <script src="./JS/main.js"></script>
 
 </body>
+
 </html>
