@@ -1,135 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> ConstruLife </title>
   <link rel="stylesheet" href="./CSS/index-stryle.css">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/header-footerStyle.css">
 
 </head>
 
 <body>
-  
+
+  <header class="navbar" style="background-color: #15297C;">
+    <div class="container-fluid" style="flex-wrap: nowrap;">
+      <a href="./index.html"><img class="logo" src="./IMG/logoCinzaEBege 1.svg" alt=""></a>
+      <form class="d-flex" role="search" style="width: 50rem;">
+        <input class="form-control me-2 campo-busca" type="search" placeholder="Pesquise" aria-label="Search" />
+      </form>
+      <button class="navbar-toggler border-white bg-white botao-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn btn-white" style="font-size: 1.6rem;"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header" style="border-bottom: 5px solid #5E5E5E; background-color: #15297C;">
+          <img class="logo2" src="./IMG/logoCinzaEBege 1.svg" alt="">
+          <button type="button" class="btn-close border border-white btn btn-outline-light"
+            data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body" style="background-color: #15297C;">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" style="color: white; font-size: 1.6rem;" href="./index.html">Pagina
+                Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./sobreNos.html">Sobre a
+                ConstruLife</a>
+            </li>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Nossas obras</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./financiamento.html">Financiamento</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
-<main>
 
-<!-- Inicio do banner -->
+  <main>
+
+    <!-- Inicio do banner -->
 
 
 
-<div id="banner">
+    <div id="banner">
 
       <h2 id="textoBanner"> <b>Encontre seu imóvel</b> </h2>
 
       <!-- <img id="imagemBanner" src="./IMG/banner.jpg" alt="BANNER ConstruLife"> -->
 
-</div>
-
-
-<!-- Fim do banner -->
-
-
-<section>
-
-      <h1 id="tituloSobre"> Onde você gostaria de morar? </h1>
-      
-      <!-- <p id="textoSobre">
-        A ConstruLife surgiu com o propósito de transformar o mercado da construção, unindo inovação tecnológica, sustentabilidade e atendimento humano.
-      </p> -->
-
-</section>
-
-
-
-<!-- Card bootstrap -->
-
-<div class="container text-center">
-  <div class="row">
-
-    <div class="col">
-      <div class="card">
-  
-        <img src="./IMG/modern_pirituba.jpeg" class="card-img-top" alt="modern Pirituba">
-    
-        <div class="card-body">
-    
-          <h5 class="card-title">Modern Pirituba</h5>
-          <p class="card-text">2 Dorms. com opção de varanda | Suíte | Lazer Completo com Rooftop</p>
-    
-        </div>
-      </div>
     </div>
 
 
-    <div class="col">
-      <div class="card">
-          <img src="./IMG/le_parc_braz_leme.jpeg" class="card-img-top" alt="Empreendimento Braz Leme">
-      
-          <div class="card-body">
-      
-            <h5 class="card-title">Le Parc Braz Leme</h5>
-            <p class="card-text">2 dorms. com Opção de varanda | Suíte | Lazer Completo com Rooftop</p>
-      
+    <!-- Fim do banner -->
+
+    <div>
+
+      <section>
+
+        <h1 id="tituloSobre"> Nossos lançamentos </h1>
+
+      </section>
+
+
+      <!-- Card bootstrap -->
+
+      <div class="container text-center">
+        <div class="row">
+
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/modern_pirituba.jpeg" class="card-img-top" alt="modern Pirituba">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Modern Pirituba</h5>
+                <p class="card-text">2 Dorms. com opção de varanda | Suíte | Lazer Completo com Rooftop</p>
+
+              </div>
+            </div>
           </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card">
 
-        <img src="./IMG/tatuapee.jpeg" class="card-img-top" alt="Empreendimento Tatuapé">
-    
-        <div class="card-body">
-    
-          <h5 class="card-title"> Grand Club Tatuapé </h5>
-          <p class="card-text"> 3 dorms. com Opção de Varanda | Suíte | Lazer Surpreedente </p>
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+              <img src="./IMG/le_parc_braz_leme.jpeg" class="card-img-top" alt="Empreendimento Braz Leme">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Le Parc Braz Leme</h5>
+                <p class="card-text">2 dorms. com Opção de varanda | Suíte | Lazer Completo com Rooftop</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/tatuapee.jpeg" class="card-img-top" alt="Empreendimento Tatuapé">
+
+              <div class="card-body">
+
+                <h5 class="card-title"> Grand Club Tatuapé </h5>
+                <p class="card-text"> 3 dorms. com Opção de Varanda | Suíte | Lazer Surpreedente </p>
+              </div>
+
+            </div>
+          </div>
         </div>
-    
       </div>
-    </div>
-</div>
+
+      <section>
+
+        <h1 id="tituloSobre"> Nossas construções </h1>
+
+      </section>
 
 
-  
+      <!-- Card bootstrap -->
 
-</div>
+      <div class="container text-center">
+        <div class="row">
 
-<!-- Card bootstrap -->
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/modern_pirituba.jpeg" class="card-img-top" alt="modern Pirituba">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Prédio sustentável - Ipiranga</h5>
+                <p class="card-text">Paíneis solares | 143 m² | R$ 610.000 | Prazo de Entrega: 20 meses</p>
+
+              </div>
+            </div>
+          </div>
 
 
-    <!-- <section id="FaleConosco">
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+              <img src="./IMG/le_parc_braz_leme.jpeg" class="card-img-top" alt="Empreendimento Braz Leme">
 
-      <div>
+              <div class="card-body">
 
-        <h2>
-            Fale conosco
-        </h2>
-  
-        <p>
-            Olá, que bom que ficou interessado em entrar em contato conosco. Preencha o formulário para
-            que um de nossos atendentes entre em contato com você o mais breve possível.
-            Lembre-se que não lhe custa nada. Se preferir você pode entrar em contato através
-        </p>
+                <h5 class="card-title">Prédio sustentável - Braz Leme</h5>
+                <p class="card-text">Paíneis solares | 140 m² | R$ 600.000 | Prazo de Entrega: 18 meses</p>
 
-        <a href="https://wa.me/5511953768582?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto." target="_blank"> <img src="./IMG/telefone.png" alt="icone de telefone">
-        </a>
+              </div>
+            </div>
+          </div>
 
-    </section> -->
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/tatuapee.jpeg" class="card-img-top" alt="Empreendimento Tatuapé">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Prédio sustentável - Florianópolis - SC </h5>
+                <p class="card-text"> Lagoa da Conceição | 145 m² | R$ 590.000 | Prazo de Entrega: 19 meses </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+
+        <h1 id="tituloSobre"> Futuras construções </h1>
+
+      </section>
+
+
+      <!-- Card bootstrap -->
+
+      <div class="container text-center">
+        <div class="row">
+
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/modern_pirituba.jpeg" class="card-img-top" alt="modern Pirituba">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Modern Pirituba</h5>
+                <p class="card-text">2 Dorms. com opção de varanda | Suíte | Lazer Completo com Rooftop</p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+              <img src="./IMG/le_parc_braz_leme.jpeg" class="card-img-top" alt="Empreendimento Braz Leme">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Le Parc Braz Leme</h5>
+                <p class="card-text">2 dorms. com Opção de varanda | Suíte | Lazer Completo com Rooftop</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-ajuste-flex">
+            <div class="card card-teste" style="height: 479.31px;">
+
+              <img src="./IMG/tatuapee.jpeg" class="card-img-top" alt="Empreendimento Tatuapé">
+
+              <div class="card-body">
+
+                <h5 class="card-title"> Grand Club Tatuapé </h5>
+                <p class="card-text"> 3 dorms. com Opção de Varanda | Suíte | Lazer Surpreedente </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
 
   </main>
 
-  
+  <footer id="rodape-fundo" style="background-color: #15297C; margin-top: 3rem;">
+    <div class="container text-center">
+      <div class="row linha-footer" style="padding-top: 2rem;">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+        <div class="col">
+          <h3 class="footerP mapaSite-footer">Mapa do Site</h3>
+
+          <ul class="justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" aria-current="page" style="color: white; font-size: 1.6rem;" href="./index.html">Pagina
+                Inicial</a>
+            </li>
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./sobreNos.html">Sobre a
+                ConstruLife</a>
+            </li>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Nossas obras</a>
+            </li> -->
+            <li class="nav-item" style="list-style-type: none;">
+              <a class="nav-link" style="color: white; font-size: 1.6rem;" href="./financiamento.html">Financiamento</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col espaco-footer">
+          <h3 class="footerP">Redes Sociais</h3>
+          <div class="div-footer footer-redes">
+            <img class="img-social" src="./IMG/social_zap.png" alt="">
+            <img class="img-social" src="./IMG/social_insta.png" alt="">
+            <img class="img-social" src="./IMG/social_google.png" alt="">
+            <img class="img-social" src="./IMG/social_face.png" alt="">
+          </div>
+        </div>
+
+        <div class="col">
+          <h3 class="footerP">Localização</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9181894647174!2d-46.42737557151221!3d-23.538386669155123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce643b859cb731%3A0xdf7b51240fd3382e!2sEstr.%20Itaquera%20Guaianazes%2C%2030%20-%20Jardim%20Helena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008246-000!5e0!3m2!1spt-BR!2sbr!4v1751480750088!5m2!1spt-BR!2sbr"
+            width="370em" height="250em" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col text-white fs-3"> &copy; 2025 ConstruLife • Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
 
 </body>
 

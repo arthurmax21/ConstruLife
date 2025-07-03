@@ -61,3 +61,15 @@ font-style: normal;
     justify-content: center;
     margin: 1rem;
 }
+
+@media(max-width: 590px) {
+    .card-teste{
+        width: 24.6rem !important;
+        margin: 1.4rem 0;
+    }
+
+    .col-ajuste-flex{
+        display: flex;
+        justify-content: center;
+    }
+}
