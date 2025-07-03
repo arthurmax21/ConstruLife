@@ -19,6 +19,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  /* justify-content: center;
+  text-align: center; */
   }
 /* Fundo branco para seções de conteúdo */
 section,
@@ -28,6 +30,7 @@ section,
   background-color: white;
   color:black;
   padding: 1rem;
+  margin: 10px;
   border-radius: 8px;
   
 }
@@ -60,13 +63,15 @@ section,
 .section-title {
   
   background-color: #15297c; /* Amarelo como na imagem */
-  color: yellow; /* Azul escuro */
+  color: yellow
+  ; /* Azul escuro */
   text-align: center;
   padding: 1rem;
   font-size: 1.8rem;
   font-weight: bold;
   margin: 2rem 0 1rem 0;
   text-transform: uppercase;
+  border-radius: 30px;
   
 }
 
@@ -84,7 +89,8 @@ section,
 
 .about-text {
   font-size: 1rem;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: center;
 }
 
 .about-image {
@@ -92,10 +98,9 @@ section,
 }
 
 .about-image img {
-  max-width: 100%;
-  height: au  to;
+  width: 20rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 /* SEÇÃO MISSÃO, VISÃO, VALORES */
@@ -118,7 +123,7 @@ section,
 }
 
 .mvv-card h3 {
-  color: #15297c; /* Amarelo */
+  color: yellow; /* Amarelo */
   font-size: 1.3rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -127,6 +132,7 @@ section,
 .mvv-card p {
   font-size: 0.9rem;
   line-height: 1.5;
+  color: white;
 }
 
 /* SEÇÃO DE SERVIÇOS */
