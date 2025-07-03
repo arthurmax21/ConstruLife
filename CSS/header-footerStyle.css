@@ -1,0 +1,89 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+    background-color: #15297C;
+}
+
+.logo {
+    margin-left: 4rem;
+}
+
+.logo2 {
+    height: 3.9rem;
+    width: 5rem;
+}
+
+.botao-toggler {
+    width: 5rem;
+    height: 3rem;
+    margin-right: 1.3rem;
+}
+
+.img-social {
+    height: 3rem;
+    width: 3rem;
+}
+
+.footerP {
+    color: white;
+    width: 100%;
+}
+
+.footer-redes {
+    margin-top: 20%;
+}
+
+.mapaSite-footer {
+    margin-bottom: 10%;
+}
+
+@media(max-width: 430px) {
+
+    .logo,
+    .logo2 {
+        height: 4.5rem;
+        width: 4.5rem;
+        margin-left: 0;
+    }
+
+    .botao-toggler {
+        width: auto;
+        height: auto;
+        margin-right: auto;
+    }
+
+    .campo-busca {
+        display: none;
+    }
+
+    .div-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .mapaSite-footer {
+        margin-bottom: 20px;
+    }
+
+    .footer-redes {
+        margin-top: 3%;
+    }
+
+    .espaco-footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
