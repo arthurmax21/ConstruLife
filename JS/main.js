@@ -1,5 +1,6 @@
 let rendaBrutaFamiliar = document.getElementById("rendaBruta")
 let valorTotalFGTS = document.getElementById("FGTS")
+let respostaCampoVazio = document.querySelector(".mesangemCampo")
 
 function toggleMenu() {
   const menu = document.getElementById("menu-items");
@@ -73,23 +74,19 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/*rendaBrutaFamiliar.addEventListener('keypress', function () {
-  let valor = rendaBrutaFamiliar.value;
-
-  // Remove tudo que não for número
-  valor = valor.replace(/\D/g, '');
-
-  // Converte para número com duas casas decimais
-  valor = (parseInt(valor, 10) / 100).toFixed(2);
-
-  // Formata com R$ e ponto/flutuante no padrão brasileiro
-  valor = valor
-    .replace('.', ',')               // ponto para vírgula
-    .replace(/\B(?=(\d{3})+(?!\d))/g, '.'); // separa milhares com ponto
-
-  rendaBrutaFamiliar.value += valor;
-});*/
-
+function proximoModal() {
+  let campoRendaBruta = rendaBrutaFamiliar.value
+  if (campoRendaBruta.length != null && campoRendaBruta.length != '') {
+    if (currentStep < modals.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    } else {
+      closeModal();
+    }
+  } else {
+    respostaCampoVazio.textContent = "Necessário que o campo esteja preenchido"
+  }
+}
 
 // Campo com os meses do financiamento
 let mesesDeFinanciamento = 360
@@ -104,7 +101,6 @@ let teste = document.querySelector('#teste')
     renda em 4.527 até 7.545 > 30% ?? 30%
 */
 
-
 // Calculo final do financiamento
 function CalculoFinanciamento() {
   // Campo para guardar a porcentaem do financiamento
@@ -115,57 +111,40 @@ function CalculoFinanciamento() {
   let CampoRenda = document.getElementById("CampoRenda")
   let valorFGTS = document.getElementById("valorFGTS")
 
-  if (valorRendaBrutaFamiliar <= 1509 || valorRendaBrutaFamiliar <= 3018) {
-    porcentagemDesconto = 40
-  } else if (valorRendaBrutaFamiliar >= 3019 && valorRendaBrutaFamiliar <= 4527) {
-    porcentagemDesconto = 60
-  } else if (valorRendaBrutaFamiliar >= 4528) {
-    porcentagemDesconto = 80
-  }
+  if (valorValorTotalFGTS.length != null && valorValorTotalFGTS.length != '') {
+    if (valorRendaBrutaFamiliar <= 1509 || valorRendaBrutaFamiliar <= 3018) {
+      porcentagemDesconto = 40
+    } else if (valorRendaBrutaFamiliar >= 3019 && valorRendaBrutaFamiliar <= 4527) {
+      porcentagemDesconto = 60
+    } else if (valorRendaBrutaFamiliar >= 4528) {
+      porcentagemDesconto = 80
+    }
 
-  let rendaMinima = valorRendaBrutaFamiliar * (30 / 100);
+    let rendaMinima = valorRendaBrutaFamiliar * (30 / 100);
 
-  let resultadoFinanciamento = rendaMinima * mesesDeFinanciamento;
+    let resultadoFinanciamento = rendaMinima * mesesDeFinanciamento;
 
-  let resultadoRetiradaDoFinanciamento = resultadoFinanciamento * (porcentagemDesconto / 100);
+    let resultadoRetiradaDoFinanciamento = resultadoFinanciamento * (porcentagemDesconto / 100);
 
-  let resultFinacimentoAntesDoFGTS = resultadoFinanciamento - resultadoRetiradaDoFinanciamento;
+    let resultFinacimentoAntesDoFGTS = resultadoFinanciamento - resultadoRetiradaDoFinanciamento;
 
-  resultadoFinalFinanciamento = resultFinacimentoAntesDoFGTS - valorValorTotalFGTS
+    resultadoFinalFinanciamento = resultFinacimentoAntesDoFGTS - valorValorTotalFGTS
 
-  //console.log(teste.innerHTML = resultadoFinalFinanciamento)
+    Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(resultadoFinalFinanciamento)
 
-  Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(resultadoFinalFinanciamento)
+    ResultFinancimaneto.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(resultadoFinalFinanciamento)
+    CampoRenda.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorRendaBrutaFamiliar)
+    valorFGTS.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorValorTotalFGTS)
 
-  ResultFinancimaneto.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(resultadoFinalFinanciamento)
-  CampoRenda.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorRendaBrutaFamiliar)
-  valorFGTS.textContent = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valorValorTotalFGTS)
-
-  if (currentStep < modals.length - 1) {
-    currentStep++;
-    showStep(currentStep);
+    if (currentStep < modals.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    } else {
+      closeModal();
+    }
   } else {
-    closeModal();
+    respostaCampoVazio.textContent = "Necessário que o campo esteja preenchido"
   }
+
+
 }
-
-
-// campoCPF.addEventListener("keypress", () => {
-//   let tamanhoCampo = campoCPF.value.length
-
-//   if (tamanhoCampo <= 11) {
-//     if (tamanhoCampo == 3 || tamanhoCampo == 7) {
-//       campoCPF.value += "."
-//     } else if (tamanhoCampo == 11) {
-//       campoCPF.value += "-"
-//     }
-//   } else if (tamanhoCampo >= 12) {
-//     if (tamanhoCampo == 2 || tamanhoCampo == 6) {
-//       campoCPF.value += "."
-//     }else if (tamanhoCampo == 10){
-//       campoCPF.value += "/"
-//     } else if (tamanhoCampo == 15) {
-//       campoCPF.value += "-"
-//     }
-//   }
-// })
