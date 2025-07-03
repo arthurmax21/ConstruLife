@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cinzel", serif;
 }
 
 body {
@@ -13,16 +14,6 @@ body {
   color: #1e3a8a; /* Azul escuro para o texto */
   line-height: 1.6;
 }
-
-*{
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  /* justify-content: center;
-  text-align: center; */
-  /* color: white; */
-  }
 
 
 /* Fundo branco para seções de conteúdo */
